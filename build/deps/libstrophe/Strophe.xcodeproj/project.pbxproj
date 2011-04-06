@@ -1,0 +1,1919 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 42;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              1D8639B01D8639B01D8639B0 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 1D7619501D7619501D761950 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            1D863BB01D863BB01D863BB0 /* CMake ReRun */,
+                            1D862A301D862A301D862A30 /* CMake Rules */,
+                     );
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85F1A01D85F1A01D85F1A0 /* PBXTargetDependency */,
+                            1D85F8101D85F8101D85F810 /* PBXTargetDependency */,
+                            1D85D6201D85D6201D85D620 /* PBXTargetDependency */,
+                            1D85DD701D85DD701D85DD70 /* PBXTargetDependency */,
+                            1D85E4B01D85E4B01D85E4B0 /* PBXTargetDependency */,
+                            1D85EB301D85EB301D85EB30 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              14F80C014F80C014F80C0000 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 14F90D014F90D014F90D0000 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            14F82A014F82A014F82A0000 /* CMake ReRun */,
+                            14F8A8014F8A8014F8A80000 /* CMake PostBuild Rules */,
+                     );
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85B7B01D85B7B01D85B7B0 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+1D78CFC01D78CFC01D78CFC0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlparse.c */ = {isa = PBXBuildFile; fileRef = 1D78CC201D78CC201D78CC20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlparse.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D78DAE01D78DAE01D78DAE0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmltok.c */ = {isa = PBXBuildFile; fileRef = 1D78D7101D78D7101D78D710 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmltok.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D78E6001D78E6001D78E600 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlrole.c */ = {isa = PBXBuildFile; fileRef = 1D78E2301D78E2301D78E230 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlrole.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D78EEE01D78EEE01D78EEE0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D78ED501D78ED501D78ED50 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D78F7E01D78F7E01D78F7E0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D78ED501D78ED501D78ED50 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D78FFD01D78FFD01D78FFD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D78ED501D78ED501D78ED50 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D7A37401D7A37401D7A3740 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/common.h */ = {isa = PBXBuildFile; fileRef = 1D7A35D01D7A35D01D7A35D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/common.h */; settings = { COMPILER_FLAGS = ""; }; };
+1D7A00E01D7A00E01D7A00E0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.h */ = {isa = PBXBuildFile; fileRef = 1D7A69A01D7A69A01D7A69A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.h */; settings = { COMPILER_FLAGS = ""; }; };
+14BD9A014BD9A014BD9A0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.h */ = {isa = PBXBuildFile; fileRef = 1D7A0A101D7A0A101D7A0A10 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.h */; settings = { COMPILER_FLAGS = ""; }; };
+1D719AF01D719AF01D719AF0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ostypes.h */ = {isa = PBXBuildFile; fileRef = 146956014695601469560000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ostypes.h */; settings = { COMPILER_FLAGS = ""; }; };
+1D71ACA01D71ACA01D71ACA0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser.h */ = {isa = PBXBuildFile; fileRef = 1D71A4601D71A4601D71A460 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser.h */; settings = { COMPILER_FLAGS = ""; }; };
+144F320144F320144F320000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.h */ = {isa = PBXBuildFile; fileRef = 146A160146A160146A160000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.h */; settings = { COMPILER_FLAGS = ""; }; };
+14BA0E014BA0E014BA0E0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.h */ = {isa = PBXBuildFile; fileRef = 14B9EE014B9EE014B9EE0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.h */; settings = { COMPILER_FLAGS = ""; }; };
+1D7018D01D7018D01D7018D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.h */ = {isa = PBXBuildFile; fileRef = 1D7017801D7017801D701780 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.h */; settings = { COMPILER_FLAGS = ""; }; };
+149417014941701494170000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.h */ = {isa = PBXBuildFile; fileRef = 1493FE01493FE01493FE0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.h */; settings = { COMPILER_FLAGS = ""; }; };
+14E725014E725014E7250000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls.h */ = {isa = PBXBuildFile; fileRef = 146C280146C280146C280000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls.h */; settings = { COMPILER_FLAGS = ""; }; };
+14F78C014F78C014F78C0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.h */ = {isa = PBXBuildFile; fileRef = 14F76C014F76C014F76C0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.h */; settings = { COMPILER_FLAGS = ""; }; };
+14F722014F722014F7220000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c */ = {isa = PBXBuildFile; fileRef = 14F702014F702014F7020000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c */; settings = { COMPILER_FLAGS = ""; }; };
+148F740148F740148F740000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c */ = {isa = PBXBuildFile; fileRef = 1491A301491A301491A30000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D7993701D7993701D799370 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c */ = {isa = PBXBuildFile; fileRef = 1D7991F01D7991F01D7991F0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D799E201D799E201D799E20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c */ = {isa = PBXBuildFile; fileRef = 1D799CA01D799CA01D799CA0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79A8E01D79A8E01D79A8E0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c */ = {isa = PBXBuildFile; fileRef = 1D79A7501D79A7501D79A750 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79B4001D79B4001D79B400 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c */ = {isa = PBXBuildFile; fileRef = 1D79B2801D79B2801D79B280 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79BEA01D79BEA01D79BEA0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c */ = {isa = PBXBuildFile; fileRef = 1D79BD201D79BD201D79BD20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79C9401D79C9401D79C940 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c */ = {isa = PBXBuildFile; fileRef = 1D79C7C01D79C7C01D79C7C0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79D4001D79D4001D79D400 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c */ = {isa = PBXBuildFile; fileRef = 1D79D2701D79D2701D79D270 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79DF001D79DF001D79DF00 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c */ = {isa = PBXBuildFile; fileRef = 1D79DDB01D79DDB01D79DDB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79E9A01D79E9A01D79E9A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c */ = {isa = PBXBuildFile; fileRef = 1D79E8201D79E8201D79E820 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D79F4601D79F4601D79F460 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c */ = {isa = PBXBuildFile; fileRef = 1D79F2D01D79F2D01D79F2D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D7A0BD01D7A0BD01D7A0BD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c */ = {isa = PBXBuildFile; fileRef = 1D79FDB01D79FDB01D79FDB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D7A16801D7A16801D7A1680 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c */ = {isa = PBXBuildFile; fileRef = 1D7A14F01D7A14F01D7A14F0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D7A21701D7A21701D7A2170 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c */ = {isa = PBXBuildFile; fileRef = 1D7A1FE01D7A1FE01D7A1FE0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D78A1A01D78A1A01D78A1A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c */ = {isa = PBXBuildFile; fileRef = 1D78A0201D78A0201D78A020 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D78AC601D78AC601D78AC60 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c */ = {isa = PBXBuildFile; fileRef = 1D78AAD01D78AAD01D78AAD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D789E601D789E601D789E60 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D789D301D789D301D789D30 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D787F001D787F001D787F00 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D789D301D789D301D789D30 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D77EE001D77EE001D77EE00 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/active.c */ = {isa = PBXBuildFile; fileRef = 1D77EAB01D77EAB01D77EAB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/active.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D77F9101D77F9101D77F910 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D783D901D783D901D783D90 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D772D801D772D801D772D80 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/basic.c */ = {isa = PBXBuildFile; fileRef = 1D758CD01D758CD01D758CD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/basic.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D7736101D7736101D773610 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D773DF01D773DF01D773DF0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+14AA84014AA84014AA840000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/bot.c */ = {isa = PBXBuildFile; fileRef = 14AA73014AA73014AA730000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/bot.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D75E7801D75E7801D75E780 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+1D75EF601D75EF601D75EF60 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+148D920148D920148D920000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/roster.c */ = {isa = PBXBuildFile; fileRef = 148D5A0148D5A0148D5A0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/roster.c */; settings = { COMPILER_FLAGS = ""; }; };
+148E1C0148E1C0148E1C0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+148E9C0148E9C0148E9C0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              127169012716901271690000 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              128D560128D560128D560000 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              1D8651801D8651801D865180 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              126DC20126DC20126DC20000 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              127958012795801279580000 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              1D8623B01D8623B01D8623B0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D7755D01D7755D01D7755D0;
+                     remoteInfo = basic_example;
+              };
+              1D85F4001D85F4001D85F400 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D700C401D700C401D700C40;
+                     remoteInfo = bot_example;
+              };
+              1D8607901D8607901D860790 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D781D501D781D501D781D50;
+                     remoteInfo = active_example;
+              };
+              1D85D8601D85D8601D85D860 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D8630101D8630101D863010;
+                     remoteInfo = roster_example;
+              };
+              1D85DFD01D85DFD01D85DFD0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D789C201D789C201D789C20;
+                     remoteInfo = Strophe;
+              };
+              1D85E7101D85E7101D85E710 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D791C701D791C701D791C70;
+                     remoteInfo = Expat;
+              };
+              1D85B3B01D85B3B01D85B3B0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1D8654E01D8654E01D8654E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1D8639B01D8639B01D8639B0;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+14D75E014D75E014D75E0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/CMakeLists.txt"; sourceTree = "<absolute>"; };
+1D78CC201D78CC201D78CC20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "xmlparse.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlparse.c"; sourceTree = "<absolute>"; };
+1D78D7101D78D7101D78D710 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmltok.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "xmltok.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmltok.c"; sourceTree = "<absolute>"; };
+1D78E2301D78E2301D78E230 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlrole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "xmlrole.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlrole.c"; sourceTree = "<absolute>"; };
+1D78ED501D78ED501D78ED50 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt"; sourceTree = "<absolute>"; };
+1D7A2F101D7A2F101D7A2F10 /* Expat */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libExpat.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+1D7A35D01D7A35D01D7A35D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "common.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/common.h"; sourceTree = "<absolute>"; };
+1D7A69A01D7A69A01D7A69A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "hash.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.h"; sourceTree = "<absolute>"; };
+1D7A0A101D7A0A101D7A0A10 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "md5.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.h"; sourceTree = "<absolute>"; };
+146956014695601469560000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ostypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "ostypes.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ostypes.h"; sourceTree = "<absolute>"; };
+1D71A4601D71A4601D71A460 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "parser.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser.h"; sourceTree = "<absolute>"; };
+146A160146A160146A160000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "sasl.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.h"; sourceTree = "<absolute>"; };
+14B9EE014B9EE014B9EE0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "sha1.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.h"; sourceTree = "<absolute>"; };
+1D7017801D7017801D701780 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "sock.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.h"; sourceTree = "<absolute>"; };
+1493FE01493FE01493FE0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "thread.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.h"; sourceTree = "<absolute>"; };
+146C280146C280146C280000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "tls.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls.h"; sourceTree = "<absolute>"; };
+14F76C014F76C014F76C0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "util.h"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.h"; sourceTree = "<absolute>"; };
+14F702014F702014F7020000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "auth.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c"; sourceTree = "<absolute>"; };
+1491A301491A301491A30000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "conn.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c"; sourceTree = "<absolute>"; };
+1D7991F01D7991F01D7991F0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ctx.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c"; sourceTree = "<absolute>"; };
+1D799CA01D799CA01D799CA0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "event.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c"; sourceTree = "<absolute>"; };
+1D79A7501D79A7501D79A750 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "handler.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c"; sourceTree = "<absolute>"; };
+1D79B2801D79B2801D79B280 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "hash.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c"; sourceTree = "<absolute>"; };
+1D79BD201D79BD201D79BD20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "jid.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c"; sourceTree = "<absolute>"; };
+1D79C7C01D79C7C01D79C7C0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "md5.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c"; sourceTree = "<absolute>"; };
+1D79D2701D79D2701D79D270 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "parser_expat.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c"; sourceTree = "<absolute>"; };
+1D79DDB01D79DDB01D79DDB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "sasl.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c"; sourceTree = "<absolute>"; };
+1D79E8201D79E8201D79E820 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "sha1.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c"; sourceTree = "<absolute>"; };
+1D79F2D01D79F2D01D79F2D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "snprintf.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c"; sourceTree = "<absolute>"; };
+1D79FDB01D79FDB01D79FDB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "sock.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c"; sourceTree = "<absolute>"; };
+1D7A14F01D7A14F01D7A14F0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "stanza.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c"; sourceTree = "<absolute>"; };
+1D7A1FE01D7A1FE01D7A1FE0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "thread.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c"; sourceTree = "<absolute>"; };
+1D78A0201D78A0201D78A020 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "util.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c"; sourceTree = "<absolute>"; };
+1D78AAD01D78AAD01D78AAD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "tls_openssl.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c"; sourceTree = "<absolute>"; };
+1D789D301D789D301D789D30 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt"; sourceTree = "<absolute>"; };
+1D77E3F01D77E3F01D77E3F0 /* Strophe */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libStrophe.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+1D77EAB01D77EAB01D77EAB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/active.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "active.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/active.c"; sourceTree = "<absolute>"; };
+1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt"; sourceTree = "<absolute>"; };
+1D7585C01D7585C01D7585C0 /* active_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = active_example; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+1D758CD01D758CD01D758CD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/basic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "basic.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/basic.c"; sourceTree = "<absolute>"; };
+1D7318301D7318301D731830 /* basic_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = basic_example; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+14AA73014AA73014AA730000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/bot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "bot.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/bot.c"; sourceTree = "<absolute>"; };
+148CE60148CE60148CE60000 /* bot_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = bot_example; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+148D5A0148D5A0148D5A0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/roster.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "roster.c"; path = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/roster.c"; sourceTree = "<absolute>"; };
+1D861D601D861D601D861D60 /* roster_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = roster_example; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              129E440129E440129E440000  = {
+                     isa = PBXGroup;
+                     children = (
+                            1D870A501D870A501D870A50 /* Sources */,
+                            1D8AEA601D8AEA601D8AEA60 /* Resources */,
+                            12BEFE012BEFE012BEFE0000 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              1D870A501D870A501D870A50 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12BF16012BF16012BF160000 /* ALL_BUILD */,
+                            12B873012B873012B8730000 /* Expat */,
+                            12BFB8012BFB8012BFB80000 /* Strophe */,
+                            12BFAD012BFAD012BFAD0000 /* active_example */,
+                            12BD6E012BD6E012BD6E0000 /* basic_example */,
+                            1287C901287C901287C90000 /* bot_example */,
+                            1D8A31B01D8A31B01D8A31B0 /* roster_example */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              1D8AEA601D8AEA601D8AEA60 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              12BF16012BF16012BF160000 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12B804012B804012B8040000 /* CMake Rules */,
+                            14D75E014D75E014D75E0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              12B804012B804012B8040000 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              12B873012B873012B8730000 /* Expat */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12BF43012BF43012BF430000 /* Source Files */,
+                            1D78ED501D78ED501D78ED50 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/CMakeLists.txt */,
+                     );
+                     name = Expat;
+                     sourceTree = "<group>";
+              };
+              12BF43012BF43012BF430000 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D78CC201D78CC201D78CC20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlparse.c */,
+                            1D78D7101D78D7101D78D710 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmltok.c */,
+                            1D78E2301D78E2301D78E230 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlrole.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              12BFB8012BFB8012BFB80000 /* Strophe */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12BFF6012BFF6012BFF60000 /* Header Files */,
+                            12BBF0012BBF0012BBF00000 /* Source Files */,
+                            1D789D301D789D301D789D30 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/CMakeLists.txt */,
+                     );
+                     name = Strophe;
+                     sourceTree = "<group>";
+              };
+              12BFF6012BFF6012BFF60000 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D7A35D01D7A35D01D7A35D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/common.h */,
+                            1D7A69A01D7A69A01D7A69A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.h */,
+                            1D7A0A101D7A0A101D7A0A10 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.h */,
+                            146956014695601469560000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ostypes.h */,
+                            1D71A4601D71A4601D71A460 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser.h */,
+                            146A160146A160146A160000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.h */,
+                            14B9EE014B9EE014B9EE0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.h */,
+                            1D7017801D7017801D701780 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.h */,
+                            1493FE01493FE01493FE0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.h */,
+                            146C280146C280146C280000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls.h */,
+                            14F76C014F76C014F76C0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              12BBF0012BBF0012BBF00000 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            14F702014F702014F7020000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c */,
+                            1491A301491A301491A30000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c */,
+                            1D7991F01D7991F01D7991F0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c */,
+                            1D799CA01D799CA01D799CA0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c */,
+                            1D79A7501D79A7501D79A750 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c */,
+                            1D79B2801D79B2801D79B280 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c */,
+                            1D79BD201D79BD201D79BD20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c */,
+                            1D79C7C01D79C7C01D79C7C0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c */,
+                            1D79D2701D79D2701D79D270 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c */,
+                            1D79DDB01D79DDB01D79DDB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c */,
+                            1D79E8201D79E8201D79E820 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c */,
+                            1D79F2D01D79F2D01D79F2D0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c */,
+                            1D79FDB01D79FDB01D79FDB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c */,
+                            1D7A14F01D7A14F01D7A14F0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c */,
+                            1D7A1FE01D7A1FE01D7A1FE0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c */,
+                            1D78A0201D78A0201D78A020 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c */,
+                            1D78AAD01D78AAD01D78AAD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              12BFAD012BFAD012BFAD0000 /* active_example */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12BD16012BD16012BD160000 /* Source Files */,
+                            1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */,
+                     );
+                     name = active_example;
+                     sourceTree = "<group>";
+              };
+              12BD16012BD16012BD160000 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D77EAB01D77EAB01D77EAB0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/active.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              12BD6E012BD6E012BD6E0000 /* basic_example */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12BE4F012BE4F012BE4F0000 /* Source Files */,
+                            1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */,
+                     );
+                     name = basic_example;
+                     sourceTree = "<group>";
+              };
+              12BE4F012BE4F012BE4F0000 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D758CD01D758CD01D758CD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/basic.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              1287C901287C901287C90000 /* bot_example */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D8A2C601D8A2C601D8A2C60 /* Source Files */,
+                            1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */,
+                     );
+                     name = bot_example;
+                     sourceTree = "<group>";
+              };
+              1D8A2C601D8A2C601D8A2C60 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            14AA73014AA73014AA730000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/bot.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              1D8A31B01D8A31B01D8A31B0 /* roster_example */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D8A35D01D8A35D01D8A35D0 /* Source Files */,
+                            1D77F5401D77F5401D77F540 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/CMakeLists.txt */,
+                     );
+                     name = roster_example;
+                     sourceTree = "<group>";
+              };
+              1D8A35D01D8A35D01D8A35D0 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            148D5A0148D5A0148D5A0000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/roster.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              12BEFE012BEFE012BEFE0000 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1D7A2F101D7A2F101D7A2F10 /* Expat */,
+                            1D77E3F01D77E3F01D77E3F0 /* Strophe */,
+                            1D7585C01D7585C01D7585C0 /* active_example */,
+                            1D7318301D7318301D731830 /* basic_example */,
+                            148CE60148CE60148CE60000 /* bot_example */,
+                            1D861D601D861D601D861D60 /* roster_example */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              1D791C701D791C701D791C70 /* libExpat.a */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1D791E201D791E201D791E20 /* Build configuration list for PBXNativeTarget "Expat" */;
+                     buildPhases = (
+                            1D790C401D790C401D790C40 /* CMake ReRun */,
+                            1D7907C01D7907C01D7907C0 /* Sources */,
+                            1D7913F01D7913F01D7913F0 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H' 'XML_DTD' 'XML_NS' 'XML_CONTEXT_BYTES=1024' 'XML_STATIC' 'STDC_HEADERS=1' 'HAVE_SYS_TYPES_H=1' 'HAVE_SYS_STAT_H=1' 'HAVE_STDLIB_H=1' 'HAVE_STRING_H=1' 'HAVE_MEMORY_H=1' 'HAVE_STRINGS_H=1' 'HAVE_INTTYPES_H=1' 'HAVE_STDINT_H=1' 'HAVE_UNISTD_H=1' 'HAVE_MEMMOVE=1' 'BYTEORDER=4321'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Expat;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                     );
+                     name = "libExpat.a";
+                     productName = "libExpat.a";
+                     productReference = 1D7A2F101D7A2F101D7A2F10 /* Expat */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              1D789C201D789C201D789C20 /* libStrophe.a */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1D7872001D7872001D787200 /* Build configuration list for PBXNativeTarget "Strophe" */;
+                     buildPhases = (
+                            1D788BD01D788BD01D788BD0 /* CMake ReRun */,
+                            1D7886F01D7886F01D7886F0 /* Sources */,
+                            1D7893B01D7893B01D7893B0 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Strophe;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85EB301D85EB301D85EB30 /* PBXTargetDependency */,
+                     );
+                     name = "libStrophe.a";
+                     productName = "libStrophe.a";
+                     productReference = 1D77E3F01D77E3F01D77E3F0 /* Strophe */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              1D781D501D781D501D781D50 /* active_example */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1D7822101D7822101D782210 /* Build configuration list for PBXNativeTarget "active_example" */;
+                     buildPhases = (
+                            1D7831E01D7831E01D7831E0 /* CMake ReRun */,
+                            1D7843C01D7843C01D7843C0 /* Sources */,
+                            1D7838701D7838701D783870 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = active_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85E4B01D85E4B01D85E4B0 /* PBXTargetDependency */,
+                     );
+                     name = active_example;
+                     productName = active_example;
+                     productReference = 1D7585C01D7585C01D7585C0 /* active_example */;
+                     productType = "com.apple.product-type.tool";
+              };
+              1D7755D01D7755D01D7755D0 /* basic_example */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1D775A901D775A901D775A90 /* Build configuration list for PBXNativeTarget "basic_example" */;
+                     buildPhases = (
+                            1D7748601D7748601D774860 /* CMake ReRun */,
+                            1D7744201D7744201D774420 /* Sources */,
+                            1D7750401D7750401D775040 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = basic_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85E4B01D85E4B01D85E4B0 /* PBXTargetDependency */,
+                     );
+                     name = basic_example;
+                     productName = basic_example;
+                     productReference = 1D7318301D7318301D731830 /* basic_example */;
+                     productType = "com.apple.product-type.tool";
+              };
+              1D700C401D700C401D700C40 /* bot_example */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1D7011001D7011001D701100 /* Build configuration list for PBXNativeTarget "bot_example" */;
+                     buildPhases = (
+                            14A9CE014A9CE014A9CE0000 /* CMake ReRun */,
+                            1D75F5901D75F5901D75F590 /* Sources */,
+                            14ABA5014ABA5014ABA50000 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = bot_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85E4B01D85E4B01D85E4B0 /* PBXTargetDependency */,
+                     );
+                     name = bot_example;
+                     productName = bot_example;
+                     productReference = 148CE60148CE60148CE60000 /* bot_example */;
+                     productType = "com.apple.product-type.tool";
+              };
+              1D8630101D8630101D863010 /* roster_example */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1277D901277D901277D90000 /* Build configuration list for PBXNativeTarget "roster_example" */;
+                     buildPhases = (
+                            1D7000001D7000001D700000 /* CMake ReRun */,
+                            148F000148F000148F000000 /* Sources */,
+                            1414A501414A501414A50000 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = roster_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     dependencies = (
+                            1D85E4B01D85E4B01D85E4B0 /* PBXTargetDependency */,
+                     );
+                     name = roster_example;
+                     productName = roster_example;
+                     productReference = 1D861D601D861D601D861D60 /* roster_example */;
+                     productType = "com.apple.product-type.tool";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              1D8654E01D8654E01D8654E0 /* Project object */ = {
+                     isa = PBXProject;
+                     buildConfigurationList = 1D8642B01D8642B01D8642B0 /* Build configuration list for PBXProject  "Strophe" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            128D560128D560128D560000 /* Debug */,
+                            1D8651801D8651801D865180 /* Release */,
+                            126DC20126DC20126DC20000 /* MinSizeRel */,
+                            127958012795801279580000 /* RelWithDebInfo */,
+                     );
+                     hasScannedForEncodings = 0;
+                     mainGroup = 129E440129E440129E440000;
+                     projectRoot = /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe;
+                     targets = (
+                            1D8639B01D8639B01D8639B0 /* ALL_BUILD */,
+                            14F80C014F80C014F80C0000 /* install */,
+                            1D791C701D791C701D791C70 /* libExpat.a */,
+                            1D789C201D789C201D789C20 /* libStrophe.a */,
+                            1D781D501D781D501D781D50 /* active_example */,
+                            1D7755D01D7755D01D7755D0 /* basic_example */,
+                            1D700C401D700C401D700C40 /* bot_example */,
+                            1D8630101D8630101D863010 /* roster_example */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              1D8632501D8632501D863250 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+              };
+              1D863BB01D863BB01D863BB0 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              1D862A301D862A301D862A30 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+              };
+              14D7E6014D7E6014D7E60000 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+              };
+              14F82A014F82A014F82A0000 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              14F8A8014F8A8014F8A80000 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+              };
+              1D790C401D790C401D790C40 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              1D7913F01D7913F01D7913F0 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/deps -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/deps/CMakeScripts/Expat_postBuildPhase.make$CONFIGURATION all";
+              };
+              1D788BD01D788BD01D788BD0 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              1D7893B01D7893B01D7893B0 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/src -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/src/CMakeScripts/Strophe_postBuildPhase.make$CONFIGURATION all";
+              };
+              1D7831E01D7831E01D7831E0 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              1D7838701D7838701D783870 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples/CMakeScripts/active_example_postBuildPhase.make$CONFIGURATION all";
+              };
+              1D7748601D7748601D774860 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              1D7750401D7750401D775040 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples/CMakeScripts/basic_example_postBuildPhase.make$CONFIGURATION all";
+              };
+              14A9CE014A9CE014A9CE0000 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              14ABA5014ABA5014ABA50000 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples/CMakeScripts/bot_example_postBuildPhase.make$CONFIGURATION all";
+              };
+              1D7000001D7000001D700000 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/ReRunCMake.make";
+              };
+              1414A501414A501414A50000 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/examples/CMakeScripts/roster_example_postBuildPhase.make$CONFIGURATION all";
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              1D7907C01D7907C01D7907C0 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            1D78CFC01D78CFC01D78CFC0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlparse.c */,
+                            1D78DAE01D78DAE01D78DAE0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmltok.c */,
+                            1D78E6001D78E6001D78E600 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib/xmlrole.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              1D7886F01D7886F01D7886F0 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            14F722014F722014F7220000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c */,
+                            148F740148F740148F740000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c */,
+                            1D7993701D7993701D799370 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c */,
+                            1D799E201D799E201D799E20 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c */,
+                            1D79A8E01D79A8E01D79A8E0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c */,
+                            1D79B4001D79B4001D79B400 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c */,
+                            1D79BEA01D79BEA01D79BEA0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c */,
+                            1D79C9401D79C9401D79C940 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c */,
+                            1D79D4001D79D4001D79D400 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c */,
+                            1D79DF001D79DF001D79DF00 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c */,
+                            1D79E9A01D79E9A01D79E9A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c */,
+                            1D79F4601D79F4601D79F460 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c */,
+                            1D7A0BD01D7A0BD01D7A0BD0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c */,
+                            1D7A16801D7A16801D7A1680 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c */,
+                            1D7A21701D7A21701D7A2170 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c */,
+                            1D78A1A01D78A1A01D78A1A0 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c */,
+                            1D78AC601D78AC601D78AC60 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              1D7843C01D7843C01D7843C0 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            1D77EE001D77EE001D77EE00 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/active.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              1D7744201D7744201D774420 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            1D772D801D772D801D772D80 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/basic.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              1D75F5901D75F5901D75F590 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            14AA84014AA84014AA840000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/bot.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              148F000148F000148F000000 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            148D920148D920148D920000 /* /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/examples/roster.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              1D85F1A01D85F1A01D85F1A0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D7755D01D7755D01D7755D0 /* basic_example */;
+                     targetProxy = 1D8623B01D8623B01D8623B0 /* PBXContainerItemProxy */;
+              };
+              1D85F8101D85F8101D85F810 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D700C401D700C401D700C40 /* bot_example */;
+                     targetProxy = 1D85F4001D85F4001D85F400 /* PBXContainerItemProxy */;
+              };
+              1D85D6201D85D6201D85D620 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D781D501D781D501D781D50 /* active_example */;
+                     targetProxy = 1D8607901D8607901D860790 /* PBXContainerItemProxy */;
+              };
+              1D85DD701D85DD701D85DD70 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D8630101D8630101D863010 /* roster_example */;
+                     targetProxy = 1D85D8601D85D8601D85D860 /* PBXContainerItemProxy */;
+              };
+              1D85E4B01D85E4B01D85E4B0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D789C201D789C201D789C20 /* libStrophe.a */;
+                     targetProxy = 1D85DFD01D85DFD01D85DFD0 /* PBXContainerItemProxy */;
+              };
+              1D85EB301D85EB301D85EB30 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D791C701D791C701D791C70 /* libExpat.a */;
+                     targetProxy = 1D85E7101D85E7101D85E710 /* PBXContainerItemProxy */;
+              };
+              1D85B7B01D85B7B01D85B7B0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1D8639B01D8639B01D8639B0 /* ALL_BUILD */;
+                     targetProxy = 1D85B3B01D85B3B01D85B3B0 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              1D8643C01D8643C01D8643C0 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                     };
+                     name = Debug;
+              };
+              1D8645601D8645601D864560 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                     };
+                     name = Release;
+              };
+              1D8647201D8647201D864720 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                     };
+                     name = MinSizeRel;
+              };
+              1D8648E01D8648E01D8648E0 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                     };
+                     name = RelWithDebInfo;
+              };
+              1D7AF5A01D7AF5A01D7AF5A0 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              14F6B3014F6B3014F6B30000 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              1D7AF7C01D7AF7C01D7AF7C0 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              1D7ACE101D7ACE101D7ACE10 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              149BB50149BB50149BB50000 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              149D2F0149D2F0149D2F0000 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              1D7A49C01D7A49C01D7A49C0 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              1D7A5CE01D7A5CE01D7A5CE0 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              1D7921501D7921501D792150 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H' 'XML_DTD' 'XML_NS' 'XML_CONTEXT_BYTES=1024' 'XML_STATIC' 'STDC_HEADERS=1' 'HAVE_SYS_TYPES_H=1' 'HAVE_SYS_STAT_H=1' 'HAVE_STDLIB_H=1' 'HAVE_STRING_H=1' 'HAVE_MEMORY_H=1' 'HAVE_STRINGS_H=1' 'HAVE_INTTYPES_H=1' 'HAVE_STDINT_H=1' 'HAVE_UNISTD_H=1' 'HAVE_MEMMOVE=1' 'BYTEORDER=4321'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "     -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Expat;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              1D7938801D7938801D793880 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H' 'XML_DTD' 'XML_NS' 'XML_CONTEXT_BYTES=1024' 'XML_STATIC' 'STDC_HEADERS=1' 'HAVE_SYS_TYPES_H=1' 'HAVE_SYS_STAT_H=1' 'HAVE_STDLIB_H=1' 'HAVE_STRING_H=1' 'HAVE_MEMORY_H=1' 'HAVE_STRINGS_H=1' 'HAVE_INTTYPES_H=1' 'HAVE_STDINT_H=1' 'HAVE_UNISTD_H=1' 'HAVE_MEMMOVE=1' 'BYTEORDER=4321'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Expat;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              1D794F701D794F701D794F70 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H' 'XML_DTD' 'XML_NS' 'XML_CONTEXT_BYTES=1024' 'XML_STATIC' 'STDC_HEADERS=1' 'HAVE_SYS_TYPES_H=1' 'HAVE_SYS_STAT_H=1' 'HAVE_STDLIB_H=1' 'HAVE_STRING_H=1' 'HAVE_MEMORY_H=1' 'HAVE_STRINGS_H=1' 'HAVE_INTTYPES_H=1' 'HAVE_STDINT_H=1' 'HAVE_UNISTD_H=1' 'HAVE_MEMMOVE=1' 'BYTEORDER=4321'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Expat;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              1D7966301D7966301D796630 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H' 'XML_DTD' 'XML_NS' 'XML_CONTEXT_BYTES=1024' 'XML_STATIC' 'STDC_HEADERS=1' 'HAVE_SYS_TYPES_H=1' 'HAVE_SYS_STAT_H=1' 'HAVE_STDLIB_H=1' 'HAVE_STRING_H=1' 'HAVE_MEMORY_H=1' 'HAVE_STRINGS_H=1' 'HAVE_INTTYPES_H=1' 'HAVE_STDINT_H=1' 'HAVE_UNISTD_H=1' 'HAVE_MEMMOVE=1' 'BYTEORDER=4321'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/deps/expat/lib ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Expat;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              1D7875301D7875301D787530 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "     -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Strophe;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              1D785C301D785C301D785C30 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Strophe;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              1D779D401D779D401D779D40 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Strophe;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              1D77B4801D77B4801D77B480 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -msse -msse";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = Strophe;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              1D7825801D7825801D782580 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "     -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = active_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              1D780E601D780E601D780E60 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = active_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              14E4E7014E4E7014E4E70000 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = active_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              14E650014E650014E6500000 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "         -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = active_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              1D775E001D775E001D775E00 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "     -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = basic_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              1D7775501D7775501D777550 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = basic_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              1D778C401D778C401D778C40 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = basic_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              1D7272301D7272301D727230 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "         -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = basic_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              1D7014301D7014301D701430 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "     -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = bot_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              141A160141A160141A160000 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = bot_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              14E28B014E28B014E28B0000 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = bot_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              14E0A8014E0A8014E0A80000 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "         -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = bot_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+              127761012776101277610000 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "     -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = roster_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Debug;
+              };
+              1D8A28C01D8A28C01D8A28C0 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Release/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = roster_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = Release;
+              };
+              12E372012E372012E3720000 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG   -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/MinSizeRel/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = roster_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = MinSizeRel;
+              };
+              12BEED012BEED012BEED0000 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'";
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = "/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include ";
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "         -msse -msse";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -headerpad_max_install_names /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libStrophe.a /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/RelWithDebInfo/libExpat.a -lssl -lresolv";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = roster_example;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              1D8642B01D8642B01D8642B0 /* Build configuration list for PBXProject  "Strophe" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D8643C01D8643C01D8643C0 /* Debug */,
+                            1D8645601D8645601D864560 /* Release */,
+                            1D8647201D8647201D864720 /* MinSizeRel */,
+                            1D8648E01D8648E01D8648E0 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1D7619501D7619501D761950 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D7AF5A01D7AF5A01D7AF5A0 /* Debug */,
+                            14F6B3014F6B3014F6B30000 /* Release */,
+                            1D7AF7C01D7AF7C01D7AF7C0 /* MinSizeRel */,
+                            1D7ACE101D7ACE101D7ACE10 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              14F90D014F90D014F90D0000 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            149BB50149BB50149BB50000 /* Debug */,
+                            149D2F0149D2F0149D2F0000 /* Release */,
+                            1D7A49C01D7A49C01D7A49C0 /* MinSizeRel */,
+                            1D7A5CE01D7A5CE01D7A5CE0 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1D791E201D791E201D791E20 /* Build configuration list for PBXNativeTarget "Expat" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D7921501D7921501D792150 /* Debug */,
+                            1D7938801D7938801D793880 /* Release */,
+                            1D794F701D794F701D794F70 /* MinSizeRel */,
+                            1D7966301D7966301D796630 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1D7872001D7872001D787200 /* Build configuration list for PBXNativeTarget "Strophe" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D7875301D7875301D787530 /* Debug */,
+                            1D785C301D785C301D785C30 /* Release */,
+                            1D779D401D779D401D779D40 /* MinSizeRel */,
+                            1D77B4801D77B4801D77B480 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1D7822101D7822101D782210 /* Build configuration list for PBXNativeTarget "active_example" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D7825801D7825801D782580 /* Debug */,
+                            1D780E601D780E601D780E60 /* Release */,
+                            14E4E7014E4E7014E4E70000 /* MinSizeRel */,
+                            14E650014E650014E6500000 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1D775A901D775A901D775A90 /* Build configuration list for PBXNativeTarget "basic_example" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D775E001D775E001D775E00 /* Debug */,
+                            1D7775501D7775501D777550 /* Release */,
+                            1D778C401D778C401D778C40 /* MinSizeRel */,
+                            1D7272301D7272301D727230 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1D7011001D7011001D701100 /* Build configuration list for PBXNativeTarget "bot_example" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D7014301D7014301D701430 /* Debug */,
+                            141A160141A160141A160000 /* Release */,
+                            14E28B014E28B014E28B0000 /* MinSizeRel */,
+                            14E0A8014E0A8014E0A80000 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1277D901277D901277D90000 /* Build configuration list for PBXNativeTarget "roster_example" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            127761012776101277610000 /* Debug */,
+                            1D8A28C01D8A28C01D8A28C0 /* Release */,
+                            12E372012E372012E3720000 /* MinSizeRel */,
+                            12BEED012BEED012BEED0000 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 1D8654E01D8654E01D8654E0 /* Project object */;
+}
