@@ -1,795 +1,0 @@
-TlibStrophe.a
-v7
-r0
-t281977845.996198
-cCheck dependencies
-cPhaseScriptExecution "CMake ReRun" /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D7B9012D7B9012D7B90000.sh
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/auth.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/conn.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/ctx.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/event.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/handler.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/hash.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/jid.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/md5.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/parser_expat.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sasl.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sha1.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/snprintf.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sock.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/stanza.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/thread.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/util.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c normal i386 c com.apple.compilers.gcc.4_2
-cCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/tls_openssl.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c normal i386 c com.apple.compilers.gcc.4_2
-cLibtool /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a normal i386
-cPhaseScriptExecution "CMake PostBuild Rules" /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D83A012D83A012D83A0000.sh
-
-N/Developer/usr/include/gcc/darwin/4.2/stdint.h
-c000000004A11A512000000000000190C
-t1242670354
-s6412
-
-N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
-c000000004A11983400000000000010DD
-t1242667060
-s4317
-
-N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/varargs.h
-c000000004A119834000000000000008B
-t1242667060
-s139
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a
-t1260285045
-s293072
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/Strophe.LinkFileList
-c000000004B1E6C7500000000000009EC
-t1260285045
-s2540
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/auth.o
-t1260285045
-s31440
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/conn.o
-t1260285045
-s24528
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/ctx.o
-t1260285045
-s15556
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/event.o
-t1260285045
-s13132
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/handler.o
-t1260285045
-s15648
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/hash.o
-t1260285045
-s11972
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/jid.o
-t1260285045
-s9968
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/md5.o
-t1260285045
-s8856
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/parser_expat.o
-t1260285045
-s10952
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sasl.o
-t1260285045
-s22868
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sha1.o
-t1260285045
-s13148
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/snprintf.o
-t1260285045
-s15796
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sock.o
-t1260285045
-s18776
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/stanza.o
-t1260285045
-s22112
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/thread.o
-t1260285045
-s8544
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/tls_openssl.o
-t1260285045
-s35376
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/util.o
-t1260285045
-s8856
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D7B9012D7B9012D7B90000.sh
-c000000004B1E6C7500000000000000AE
-t1260285045
-s174
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D83A012D83A012D83A0000.sh
-c000000004B1E6C7500000000000000F4
-t1260285045
-s244
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c
-c000000004AFF3AEE0000000000006C83
-t1258240750
-s27779
-i<stdio.h>
-i<stdlib.h>
-i<string.h>
-i"strophe.h"
-i"common.h"
-i"sasl.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/common.h
-c000000004AFF3AEE0000000000001D38
-t1258240750
-s7480
-i<stdio.h>
-i<stdarg.h>
-i<assert.h>
-i<stdint.h>
-i"strophe.h"
-i"sock.h"
-i"tls.h"
-i"hash.h"
-i"util.h"
-i"parser.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c
-c000000004AFF3AEE00000000000053DB
-t1258240750
-s21467
-i<stdio.h>
-i<stdlib.h>
-i<string.h>
-i<strophe.h>
-i"common.h"
-i"util.h"
-i"parser.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c
-c000000004AFF3AEE00000000000030DF
-t1258240750
-s12511
-i<stdlib.h>
-i<stdio.h>
-i<stdarg.h>
-i<string.h>
-i"strophe.h"
-i"common.h"
-i"util.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c
-c000000004AFF3AEE0000000000002336
-t1258240750
-s9014
-i<stdio.h>
-i<stdlib.h>
-i<string.h>
-i<sys/select.h>
-i<errno.h>
-i<winsock2.h>
-i<strophe.h>
-i"common.h"
-i"parser.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c
-c000000004AFF3AEE0000000000003F5E
-t1258240750
-s16222
-i<stdio.h>
-i<stdlib.h>
-i<string.h>
-i<stdint.h>
-i"ostypes.h"
-i"strophe.h"
-i"common.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c
-c000000004AFF3AEE000000000000179B
-t1258240750
-s6043
-i<stdlib.h>
-i<string.h>
-i"strophe.h"
-i"common.h"
-i"hash.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.h
-c000000004AFF3AEE000000000000074C
-t1258240750
-s1868
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c
-c000000004AFF3AEE0000000000000F97
-t1258240750
-s3991
-i<string.h>
-i"strophe.h"
-i"common.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c
-c000000004AFF3AEE000000000000234F
-t1258240750
-s9039
-i<string.h>
-i"md5.h"
-i<stdio.h>
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.h
-c000000004AFF3AEE0000000000000394
-t1258240750
-s916
-i<stdint.h>
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ostypes.h
-c000000004AFF3AEE00000000000002BB
-t1258240750
-s699
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser.h
-c000000004AFF3AEE0000000000000573
-t1258240750
-s1395
-i"strophe.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c
-c000000004AFF3AEE0000000000001430
-t1258240750
-s5168
-i<stdio.h>
-i<stdlib.h>
-i<string.h>
-i<expat.h>
-i<strophe.h>
-i"common.h"
-i"parser.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c
-c000000004AFF3AEE0000000000004631
-t1258240750
-s17969
-i<string.h>
-i"strophe.h"
-i"common.h"
-i"sasl.h"
-i"md5.h"
-i<stdint.h>
-i<stdio.h>
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.h
-c000000004AFF3AEE00000000000004E6
-t1258240750
-s1254
-i"strophe.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c
-c000000004AFF3AEE0000000000002FCA
-t1258240750
-s12234
-i<stdio.h>
-i<string.h>
-i<stdint.h>
-i"sha1.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.h
-c000000004AFF3AEE0000000000000256
-t1258240750
-s598
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c
-c000000004AFF3AEE0000000000004BD2
-t1258240750
-s19410
-i<string.h>
-i<ctype.h>
-i<sys/types.h>
-i<stdarg.h>
-i<varargs.h>
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c
-c000000004AFF3AEE0000000000004D5E
-t1258240750
-s19806
-i<stdio.h>
-i<stdlib.h>
-i<string.h>
-i<assert.h>
-i<sys/types.h>
-i<winsock2.h>
-i<ws2tcpip.h>
-i<windns.h>
-i<Iphlpapi.h>
-i<errno.h>
-i<unistd.h>
-i<sys/socket.h>
-i<netinet/in.h>
-i<netdb.h>
-i<fcntl.h>
-i<arpa/nameser.h>
-i<arpa/nameser_compat.h>
-i<resolv.h>
-i"sock.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.h
-c000000004AFF3AEE0000000000000590
-t1258240750
-s1424
-i<stdio.h>
-i<winsock2.h>
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c
-c000000004AFF3AEE0000000000005836
-t1258240750
-s22582
-i<stdio.h>
-i<string.h>
-i"strophe.h"
-i"common.h"
-i"hash.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c
-c000000004AFF3AEE000000000000082E
-t1258240750
-s2094
-i<stdio.h>
-i<stdlib.h>
-i<windows.h>
-i<pthread.h>
-i"strophe.h"
-i"common.h"
-i"thread.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.h
-c000000004AFF3AEE00000000000003BD
-t1258240750
-s957
-i<stdio.h>
-i<stdlib.h>
-i<windows.h>
-i<pthread.h>
-i"strophe.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls.h
-c000000004AFF3AEE0000000000000459
-t1258240750
-s1113
-i"common.h"
-i"sock.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c
-c000000004AFF3AEE0000000000000CFB
-t1258240750
-s3323
-i<string.h>
-i<sys/select.h>
-i<winsock2.h>
-i<openssl/ssl.h>
-i<openssl/rand.h>
-i"common.h"
-i"tls.h"
-i"sock.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c
-c000000004AFF3AEE0000000000000AAC
-t1258240750
-s2732
-i<stdio.h>
-i<string.h>
-i<winsock2.h>
-i<sys/time.h>
-i<time.h>
-i<stdint.h>
-i"strophe.h"
-i"common.h"
-i"util.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.h
-c000000004AFF3AEE00000000000002F3
-t1258240750
-s755
-i<stdint.h>
-i"ostypes.h"
-
-N/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/strophe.h
-c000000004AFF3AEE0000000000002B34
-t1258240750
-s11060
-i<stdio.h>
-
-N/usr/include/arpa/nameser.h
-c000000004A119C340000000000005638
-t1242668084
-s22072
-
-N/usr/include/arpa/nameser_compat.h
-c000000004A5C14A60000000000001A0C
-t1247548582
-s6668
-
-N/usr/include/assert.h
-c000000004A5C14A60000000000000DCB
-t1247548582
-s3531
-
-N/usr/include/ctype.h
-c000000004A5C14A60000000000002C18
-t1247548582
-s11288
-
-N/usr/include/errno.h
-c000000004A5C14A600000000000003EB
-t1247548582
-s1003
-
-N/usr/include/expat.h
-c000000004A119ADD0000000000009D93
-t1242667741
-s40339
-
-N/usr/include/fcntl.h
-c000000004A5C14A600000000000003EA
-t1247548582
-s1002
-
-N/usr/include/netdb.h
-c000000004A4181220000000000003057
-t1245806882
-s12375
-
-N/usr/include/netinet/in.h
-c000000004A73D64C000000000000539D
-t1249105484
-s21405
-
-N/usr/include/openssl/rand.h
-c000000004A58360D0000000000001862
-t1247294989
-s6242
-
-N/usr/include/openssl/ssl.h
-c000000004A583613000000000001493E
-t1247294995
-s84286
-
-N/usr/include/pthread.h
-c000000004A5C14A700000000000038F0
-t1247548583
-s14576
-
-N/usr/include/resolv.h
-c000000004A119C340000000000004B49
-t1242668084
-s19273
-
-N/usr/include/stdio.h
-c000000004A5C14A70000000000004174
-t1247548583
-s16756
-
-N/usr/include/stdlib.h
-c000000004A5C14A70000000000002DF5
-t1247548583
-s11765
-
-N/usr/include/string.h
-c000000004A5C14A70000000000001731
-t1247548583
-s5937
-
-N/usr/include/sys/select.h
-c000000004A73D65400000000000016A2
-t1249105492
-s5794
-
-N/usr/include/sys/socket.h
-c000000004A73D65400000000000059BC
-t1249105492
-s22972
-
-N/usr/include/sys/time.h
-c000000004A73D6550000000000001E17
-t1249105493
-s7703
-
-N/usr/include/sys/types.h
-c000000004A73D6550000000000002905
-t1249105493
-s10501
-
-N/usr/include/time.h
-c000000004A5C14A7000000000000178E
-t1247548583
-s6030
-
-N/usr/include/unistd.h
-c000000004A5C14A7000000000000563E
-t1247548583
-s22078
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies281977845#281977845#0(0"0(0#1#0"4300882208#0"0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/auth.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.146877
-e281977845.239447
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/auth.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/auth.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/auth.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/conn.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.147719
-e281977845.233290
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/conn.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/conn.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/conn.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/ctx.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.233388
-e281977845.295413
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/ctx.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c281977845#281977845#0(0"0(0#0#81"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c4300882208#1496"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/ctx.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/ctx.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/event.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.239540
-e281977845.294416
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/event.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c281977845#281977845#0(0"0(0#0#83"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c4300882208#1500"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/event.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/event.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/handler.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.294513
-e281977845.363302
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/handler.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@93"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c281977845#281977845#0(0"0(0#0#85"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c4300882208#1504"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/handler.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/handler.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/hash.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.295499
-e281977845.350520
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/hash.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/hash.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/hash.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/jid.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.350628
-e281977845.414407
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/jid.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c281977845#281977845#0(0"0(0#0#81"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c4300882208#1496"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/jid.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/jid.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/md5.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.363394
-e281977845.434129
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/md5.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c281977845#281977845#0(0"0(0#0#81"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c4300882208#1496"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/md5.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/md5.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/parser_expat.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.414500
-e281977845.502949
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/parser_expat.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@98"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c281977845#281977845#0(0"0(0#0#90"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c4300882208#1514"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/parser_expat.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/parser_expat.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sasl.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.434226
-e281977845.550470
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sasl.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sasl.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sasl.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sha1.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.503045
-e281977845.715289
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sha1.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sha1.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sha1.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/snprintf.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.550574
-e281977845.633889
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/snprintf.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@94"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c281977845#281977845#0(0"0(0#0#86"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c4300882208#1506"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/snprintf.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/snprintf.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sock.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.633985
-e281977845.767394
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sock.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/sock.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/sock.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/stanza.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.715381
-e281977845.792113
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/stanza.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@92"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c281977845#281977845#0(0"0(0#0#84"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c4300882208#1502"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/stanza.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/stanza.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/thread.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.767487
-e281977845.817944
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/thread.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@92"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c281977845#281977845#0(0"0(0#0#84"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c4300882208#1502"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/thread.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/thread.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/tls_openssl.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.818038
-e281977845.926617
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/tls_openssl.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@97"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c281977845#281977845#0(0"0(0#0#89"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c4300882208#1512"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/tls_openssl.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/tls_openssl.o0#
-
-CCompileC deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/util.o /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c normal i386 c com.apple.compilers.gcc.4_2
-s281977845.792210
-e281977845.834280
-r1
-xCompileC
-xdeps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/util.o
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c281977845#281977845#0(0"0(0#0#82"/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c4300882208#1498"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DHAVE_GameSyn_BUILDSETTINGS_H -DHAVE_Strophe_BUILDSETTINGS_H -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe -I/Users/jlong/development/personal/cplusplus/gamesyn_api/api/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/include -I/System/Library/Frameworks/Carbon.framework/Headers -I/System/Library/Frameworks/Cocoa.framework/Headers -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources/i386 -I/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources -msse -msse -c /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe/src/util.c -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/util.o0#
-
-CLibtool /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a normal i386
-s281977845.926700
-e281977845.951333
-r1
-xLibtool
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a
-xnormal
-xi386
-lSLF07#2@58"Libtool deps/libstrophe/lib/Debug/libStrophe.a normal i386281977845#281977845#0(0"0(0#0#0"4300882208#490"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    /Developer/usr/bin/libtool -static -arch_only i386 -L/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug -filelist /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/Strophe.LinkFileList -o /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a0#
-
-CPhaseScriptExecution "CMake PostBuild Rules" /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D83A012D83A012D83A0000.sh
-s281977845.951429
-e281977845.996072
-r1
-xPhaseScriptExecution
-xCMake PostBuild Rules
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D83A012D83A012D83A0000.sh
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/jlong/development/personal/cplusplus/gamesyn_api/build && make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/XCODE_DEPEND_HELPER.make all.Debug
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/active_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/basic_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/bot_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/roster_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/bin/Debug/Demo_Hello.app/Contents/MacOS/Demo_Hello
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe && make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/CMakeScripts/XCODE_DEPEND_HELPER.make all.Debug
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/active_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/basic_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/bot_example
-o/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/roster_example
-lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'281977845#281977845#0(1684"echo "Depend check for xcode"Depend check for xcodecd /Users/jlong/development/personal/cplusplus/gamesyn_api/build && make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/XCODE_DEPEND_HELPER.make all.Debug/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/active_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/basic_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/bot_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/roster_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/bin/Debug/Demo_Hello.app/Contents/MacOS/Demo_Helloecho "Depend check for xcode"Depend check for xcodecd /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe && make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/CMakeScripts/XCODE_DEPEND_HELPER.make all.Debug/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/active_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/basic_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/bot_example/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/roster_example15(13@30"echo "Depend check for xcode"281977845#0#30#0(1@0"0(13@23"Depend check for xcode281977845#30#23#0(1@0"0(13@251"cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build && make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/CMakeScripts/XCODE_DEPEND_HELPER.make all.Debug281977845#53#251#0(1@0"0(13@114"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/active_example281977845#304#114#0(1@0"0(13@113"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/basic_example281977845#418#113#0(1@0"0(13@111"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/bot_example281977845#531#111#0(1@0"0(13@114"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/roster_example281977845#642#114#0(1@0"0(13@124"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/bin/Debug/Demo_Hello.app/Contents/MacOS/Demo_Hello281977845#756#124#0(1@0"0(13@30"echo "Depend check for xcode"281977845#880#30#0(1@0"0(13@23"Depend check for xcode281977845#910#23#0(1@0"0(13@299"cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe && make -C /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/CMakeScripts/XCODE_DEPEND_HELPER.make all.Debug281977845#933#299#0(1@0"0(13@114"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/active_example281977845#1232#114#0(1@0"0(13@113"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/basic_example281977845#1346#113#0(1@0"0(13@111"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/bot_example281977845#1459#111#0(1@0"0(13@114"/bin/rm -f /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/bin/Debug/roster_example281977845#1570#114#0(1@0"0(0#0#0"4300882208#16387"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER jlong    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv BUILD_ROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv CACHE_ROOT /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv CONFIGURATION_TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/GameSyn.dst    setenv DWARF_DSYM_FILE_NAME libStrophe.a.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLE_EXTENSION a    setenv EXECUTABLE_NAME libStrophe.a    setenv EXECUTABLE_PATH libStrophe.a    setenv EXECUTABLE_PREFIX lib    setenv EXECUTABLE_SUFFIX .a    setenv FILE_LIST /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/FixedFiles    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME libStrophe.a    setenv GCC3_VERSION 3.3    setenv GCC_ENABLE_SYMBOL_SEPARATION NO    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PREPROCESSOR_DEFINITIONS "'CMAKE_INTDIR=\"Debug\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include\" /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PREPROCESS NO    setenv INSTALL_DIR /tmp/GameSyn.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER jlong    setenv INSTALL_ROOT /tmp/GameSyn.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Strophe-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug\" "    setenv LIBRARY_STYLE STATIC    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/Strophe.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE staticlib    setenv MAC_OS_X_VERSION_ACTUAL 1061    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0601    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal    setenv OBJROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "     -msse -msse"    setenv OTHER_CPLUSPLUSFLAGS "     -msse -msse"    setenv PACKAGE_TYPE com.apple.package-type.static-library    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PFE_FILE_C_DIALECTS c    setenv PKGINFO_FILE_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /usr/local/include    setenv PRODUCT_NAME Strophe    setenv PRODUCT_SETTINGS_PATH     setenv PRODUCT_TYPE com.apple.product-type.library.static    setenv PROFILING_CODE NO    setenv PROJECT GameSyn    setenv PROJECT_DERIVED_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/DerivedSources    setenv PROJECT_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv PROJECT_FILE_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/GameSyn.xcodeproj    setenv PROJECT_NAME GameSyn    setenv PROJECT_TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build    setenv PUBLIC_HEADERS_FOLDER_PATH /usr/local/include    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/ResourceManagerResources    setenv REZ_EXECUTABLE YES    setenv REZ_OBJECTS_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP YES    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/DerivedSources    setenv SHARED_PRECOMPS_DIR /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv SRCROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/SymbolRepositories    setenv SYMROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME libStrophe.a    setenv TARGET_BUILD_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv TARGET_NAME libStrophe.a    setenv TARGET_TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_FILES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_ROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv UID 501    setenv UNSTRIPPED_PRODUCT NO    setenv USER jlong    setenv USER_APPS_DIR /Users/jlong/Applications    setenv USER_LIBRARY_DIR /Users/jlong/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP NO    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSION_INFO_BUILDER jlong    setenv VERSION_INFO_FILE Strophe_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Strophe  PROJECT:GameSyn-\""    setenv WARNING_CFLAGS "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas"    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D83A012D83A012D83A0000.sh0#
-
-CPhaseScriptExecution "CMake ReRun" /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D7B9012D7B9012D7B90000.sh
-s281977845.126361
-e281977845.146537
-r1
-xPhaseScriptExecution
-xCMake ReRun
-x/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D7B9012D7B9012D7B90000.sh
-omake: `CMakeFiles/cmake.check_cache' is up to date.
-lSLF07#2@37"Run custom shell script 'CMake ReRun'281977845#281977845#0(52"make: `CMakeFiles/cmake.check_cache' is up to date.1(13@52"make: `CMakeFiles/cmake.check_cache' is up to date.281977845#0#52#0(1@0"0(0#0#0"4300882208#16387"    cd /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER jlong    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv BUILD_ROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv CACHE_ROOT /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/libStrophe.a    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv CONFIGURATION_TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/GameSyn.dst    setenv DWARF_DSYM_FILE_NAME libStrophe.a.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLE_EXTENSION a    setenv EXECUTABLE_NAME libStrophe.a    setenv EXECUTABLE_PATH libStrophe.a    setenv EXECUTABLE_PREFIX lib    setenv EXECUTABLE_SUFFIX .a    setenv FILE_LIST /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/FixedFiles    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME libStrophe.a    setenv GCC3_VERSION 3.3    setenv GCC_ENABLE_SYMBOL_SEPARATION NO    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PREPROCESSOR_DEFINITIONS "'CMAKE_INTDIR=\"Debug\"' 'HAVE_GameSyn_BUILDSETTINGS_H' 'HAVE_Strophe_BUILDSETTINGS_H'"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/include\" /Users/jlong/development/personal/cplusplus/gamesyn_api/deps/libstrophe /Users/jlong/development/personal/cplusplus/gamesyn_api/api/include /Users/jlong/development/personal/cplusplus/gamesyn_api/build/include /System/Library/Frameworks/Carbon.framework/Headers /System/Library/Frameworks/Cocoa.framework/Headers /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/include "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PREPROCESS NO    setenv INSTALL_DIR /tmp/GameSyn.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER jlong    setenv INSTALL_ROOT /tmp/GameSyn.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Strophe-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug\" "    setenv LIBRARY_STYLE STATIC    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal/i386/Strophe.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE staticlib    setenv MAC_OS_X_VERSION_ACTUAL 1061    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0601    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Objects-normal    setenv OBJROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "     -msse -msse"    setenv OTHER_CPLUSPLUSFLAGS "     -msse -msse"    setenv PACKAGE_TYPE com.apple.package-type.static-library    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PFE_FILE_C_DIALECTS c    setenv PKGINFO_FILE_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /usr/local/include    setenv PRODUCT_NAME Strophe    setenv PRODUCT_SETTINGS_PATH     setenv PRODUCT_TYPE com.apple.product-type.library.static    setenv PROFILING_CODE NO    setenv PROJECT GameSyn    setenv PROJECT_DERIVED_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/DerivedSources    setenv PROJECT_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv PROJECT_FILE_PATH /Users/jlong/development/personal/cplusplus/gamesyn_api/build/GameSyn.xcodeproj    setenv PROJECT_NAME GameSyn    setenv PROJECT_TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build    setenv PUBLIC_HEADERS_FOLDER_PATH /usr/local/include    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/ResourceManagerResources    setenv REZ_EXECUTABLE YES    setenv REZ_OBJECTS_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP YES    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug/DerivedSources    setenv SHARED_PRECOMPS_DIR /var/folders/fP/fPmJoUj8FJ8MGeJA2-l5JE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv SRCROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/SymbolRepositories    setenv SYMROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME libStrophe.a    setenv TARGET_BUILD_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/Debug    setenv TARGET_NAME libStrophe.a    setenv TARGET_TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_FILES_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_FILE_DIR /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build    setenv TEMP_ROOT /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib    setenv UID 501    setenv UNSTRIPPED_PRODUCT NO    setenv USER jlong    setenv USER_APPS_DIR /Users/jlong/Applications    setenv USER_LIBRARY_DIR /Users/jlong/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP NO    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSION_INFO_BUILDER jlong    setenv VERSION_INFO_FILE Strophe_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Strophe  PROJECT:GameSyn-\""    setenv WARNING_CFLAGS "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas"    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/jlong/development/personal/cplusplus/gamesyn_api/build/deps/libstrophe/lib/GameSyn.build/Debug/libStrophe.a.build/Script-12D7B9012D7B9012D7B90000.sh0#
-
