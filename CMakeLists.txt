@@ -73,9 +73,8 @@ include(TestBigEndian)
 test_big_endian(GameSyn_TEST_BIG_ENDIAN)
 
 # Add GameSyn engine include path
-include_directories("${GameSyn_SOURCE_DIR}/deps/libstrophe")
-include_directories("${GameSyn_SOURCE_DIR}/api/include")
-include_directories("${GameSyn_BINARY_DIR}/include")
+include_directories("${GameSyn_SOURCE_DIR}/deps/curl")
+include_directories("${GameSyn_SOURCE_DIR}/api")
 
 include(Dependencies)
 # definitions for samples
