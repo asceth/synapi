@@ -13,7 +13,7 @@ struct synapi_t* synapi_init(const char* api_key, int pool_size)
     {
       handle->pool[i] = new synapi_curl_handle_t;
       handle->pool[i]->handle = curl_easy_init();
-      handle->pool[i]->free = true
+      handle->pool[i]->free = 1;
     }
 
   if (handle->api_key != NULL)
@@ -99,10 +99,10 @@ void synapi_perform(struct synapi_t* handle)
                 {
                   if (handle->pool[i]->api_key_request)
                     {
-                      handle->api_key_set = true;
+                      handle->api_key_set = 1;
                     }
-                  handle->pool[i]->free = true;
-                  handle->pool[i]->api_key_request = false;
+                  handle->pool[i]->free = 1;
+                  handle->pool[i]->api_key_request = 0;
                   curl_multi_remove_handle(handle->multi_handle, handle->pool[i]->handle);
                 }
             }
@@ -111,14 +111,14 @@ void synapi_perform(struct synapi_t* handle)
 }
 
 void synapi_new_server(struct synapi_t* handle, ...)
-{n
+{
   va_list options;
   va_start(options, handle);
 
   unsigned char url[255];
   snprintf(url, "http://api.serversyn.com/servers", sizeof(url));
 
-  synapi_send(handle, url, 1, true, options);
+  synapi_send(handle, url, 1, 1, options);
 
   va_end(options);
 }
@@ -131,7 +131,7 @@ void synapi_update_server(struct synapi_t* handle, ...)
   unsigned char url[255];
   snprintf(url, "http://api.serversyn.com/servers/%s", sizeof(url), handle->api_key);
 
-  synapi_send(handle, url, 2, false, options);
+  synapi_send(handle, url, 2, 0, options);
 
   va_end(options);
 }
@@ -144,7 +144,7 @@ void synapi_player(struct synapi_t* handle, ...)
   unsigned char url[255];
   snprintf(url, "http://api.serversyn.com/servers/%s/players", sizeof(url), handle->api_key);
 
-  synapi_send(handle, url, 1, false, options);
+  synapi_send(handle, url, 1, 0, options);
 
   va_end(options);
 }
@@ -157,7 +157,7 @@ void synapi_delete_player(struct synapi_t* handle, int internal_id)
   unsigned char url[255];
   snprintf(url, "http://api.serversyn.com/servers/%s/players/%d", sizeof(url), handle->api_key, internal_id);
 
-  synapi_send(handle, url, 0, false, options);
+  synapi_send(handle, url, 0, 0, options);
 
   va_end(options);
 }
@@ -188,8 +188,8 @@ void synapi_send(struct synapi_t* handle, const char* url, int method, int api_k
 
   if (api_key_request)
     {
-      curl->api_key_request = true;
-      handle->api_key_set = false;
+      curl->api_key_request = 1;
+      handle->api_key_set = 0;
       handle->api_key[0] = '\0';
       curl_easy_setopt(curl->handle, CURLOPT_WRITEFUNCTION, synapi_api_key_write);
       curl_easy_setopt(curl->handle, CURLOPT_WRITEDATA, handle);
@@ -234,7 +234,7 @@ CURL* synapi_get_curl_handle()
     {
       if (handle->pool[i]->free)
         {
-          handle->pool[i]->free = false;
+          handle->pool[i]->free = 0;
           return handle->pool[i]->handle;
         }
     }
@@ -255,7 +255,7 @@ char* synapi_build_query_string(struct synapi_t* handle, ...)
   char* name = NULL;
   char numeric_value[8];
 
-  while(true)
+  while(1)
     {
       attribute = va_arg(options, synapi_option);
       if (option == SYNAPI_END)

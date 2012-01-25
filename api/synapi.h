@@ -31,16 +31,16 @@ struct synapi_t
 
 enum synapi_option
   {
-    SYNAPI_SLOTS,
-    SYNAPI_SCORE,
-    SYNAPI_INTERNAL_ID,
-    SYNAPI_GAME,
-    SYNAPI_IP,
-    SYNAPI_PORT,
-    SYNAPI_NAME,
-    SYNAPI_LEVEL,
-    SYNAPI_UNIQUE,
-    SYNAPI_END
+    SYNAPI_SLOTS = 0,   // 0
+    SYNAPI_SCORE,       // 1
+    SYNAPI_INTERNAL_ID, // 2
+    SYNAPI_GAME,        // 3
+    SYNAPI_IP,          // 4
+    SYNAPI_PORT,        // 5
+    SYNAPI_NAME,        // 6
+    SYNAPI_LEVEL,       // 7
+    SYNAPI_UNIQUE,      // 8
+    SYNAPI_END          // 9
   };
 
 
