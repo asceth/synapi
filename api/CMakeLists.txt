@@ -11,7 +11,7 @@ set (SOURCE_FILES
 )
 
 add_definitions(-D_USRDLL)
-set(ENGINE_LIBS Curl)
+set(ENGINE_LIBS curl)
 message(STATUS "Engine libs: ${ENGINE_LIBS}")
 
 add_library(Synapi STATIC ${HEADER_FILES} ${SOURCE_FILES})

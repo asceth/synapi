@@ -1,0 +1,50 @@
+/*
+  - new game server (api key)
+  - uptime hearbeat
+
+  Replaceable Stats
+  - game
+  - ip
+  - port
+  - name
+  - slots
+  - current level
+  -
+
+  Add/Remove
+  - player
+  - name
+  - score
+  - server_internal_id
+  - player_id
+
+  Flow
+  ----
+  localhost:3000/servers (POST)
+  localhost:3000/servers/:api_key (PUT)
+  = {:game => "zombie_master", :ip => "", :port => "", :name => "", :slots => 16, :level => "zm_yar"}
+
+  localhost:3000/servers/:api_key/players (POST) (resets time player "connected")
+  = {:name => "", :server_internal_id => 0}
+  localhost:3000/servers/:api_key/players (POST) (resets time player "connected")
+  = {:name => "", :server_internal_id => 1}
+
+  (15 minutes later)
+
+  localhost:3000/servers/:api_key (PUT)
+  = {} (heartbeat request)
+
+  (Player 1 changes name)
+
+  localhost:3000/servers/:api_key/players/:internal_id (PUT)
+  {:name => "changed"}
+
+  (Player 0 leaves)
+
+  localhost:3000/servers/:api_key/players/:internal_id (DELETE)
+
+  (map changes)
+
+  localhost:3000/servers/:api_key (PUT)
+  = {:level => "zm_changed"}
+*/

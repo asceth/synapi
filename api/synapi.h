@@ -8,61 +8,106 @@
 
 #define SYNAPIAPI_VERSION ((SYNAPIAPI_VERSION_MAJOR << 16) | (SYNAPIAPI_VERSION_MINOR << 8) | SYNAPIAPI_VERSION_PATCH)
 
+#include <curl/curl.h>
 
 // Pre-declare classes
 // Allows use of pointers in header files without including individual .h
 // so decreases dependencies between files
 
-struct synapi_curl_handle_t {
-  int free;
-  int api_key_request;
-  CURL* handle;
-};
+typedef enum synapi_option
+  {
+    SYNAPI_SERVER_SLOTS = 0,
+    SYNAPI_SERVER_GAME,
+    SYNAPI_SERVER_IP,
+    SYNAPI_SERVER_PORT,
+    SYNAPI_SERVER_NAME,
+    SYNAPI_SERVER_LEVEL,
+    SYNAPI_PLAYER_NAME,
+    SYNAPI_PLAYER_SCORE,
+    SYNAPI_PLAYER_INTERNAL_ID,
+    SYNAPI_PLAYER_NETWORK_ID,
+    SYNAPI_END
+  } synapi_option;
 
-struct synapi_t
+typedef enum synapi_method
+  {
+    SYN_GET = 0,
+    SYN_POST = 1,
+    SYN_PUT = 2,
+    SYN_DELETE = 3
+  } synapi_method;
+
+typedef enum synapi_action
+  {
+    SYN_SERVERS_NEW = 0,
+    SYN_SERVERS_UPDATE,
+    SYN_PLAYERS_NEW,
+    SYN_PLAYERS_UPDATE,
+    SYN_PLAYERS_DELETE,
+    SYN_HEARTBEAT
+  } synapi_action;
+
+typedef struct synapi_curl_handle_t {
+  int free;
+  CURL* handle;
+} synapi_curl_handle_t;
+
+typedef struct synapi_request_t
+{
+  char* query;
+  char url[255];
+  synapi_method method;
+  synapi_action action;
+  int api_key_request;
+  int user_data;
+} synapi_request_t;
+
+typedef struct synapi_t
 {
   int pool_size;
   int handles_running;
   int queued_messages;
+  int api_key_set;
   CURLM* multi_handle;
-  char api_key[96]; // SYN:S:<id>:<hash>
-  struct synapi_curl_handle_t* pool[];
-};
-
-enum synapi_option
-  {
-    SYNAPI_SLOTS = 0,   // 0
-    SYNAPI_SCORE,       // 1
-    SYNAPI_INTERNAL_ID, // 2
-    SYNAPI_GAME,        // 3
-    SYNAPI_IP,          // 4
-    SYNAPI_PORT,        // 5
-    SYNAPI_NAME,        // 6
-    SYNAPI_LEVEL,       // 7
-    SYNAPI_UNIQUE,      // 8
-    SYNAPI_END          // 9
-  };
+  char api_key[256]; // SYN:S:<id>:<hash>
+  synapi_curl_handle_t** pool;
+  synapi_request_t** requests;
+} synapi_t;
 
 
-// "public"
-struct synapi_t* synapi_init(const char* api_key, int pool_size);
+// public
+synapi_t* synapi_init(const char* api_key, int pool_size);
+void synapi_free(synapi_t* handle);
 
-void synapi_perform(struct synapi_t* handle);
+int synapi_queued(synapi_t* handle);
+void synapi_perform(synapi_t* handle);
 
-void synapi_new_server(struct synapi_t* handle, ...);
-void synapi_update_server(struct synapi_t* handle, ...);
 
-void synapi_player(struct synapi_t* handle, ...);
-void synapi_delete_player(struct synapi_t* handle, int internal_id);
+// ACTIONS
+void synapi_new_server(synapi_t* handle);
+void synapi_update_server(synapi_t* handle, ...);
+void synapi_player(synapi_t* handle, ...);
+void synapi_update_player(synapi_t* handle, int internal_id, ...);
+void synapi_delete_player(synapi_t* handle, int internal_id);
+void synapi_heartbeat(synapi_t* handle);
 
-void synapi_send(struct synapi_t* handle, const char* url, int method, int api_key_request, ...);
-void synapi_heartbeat(struct synapi_t* handle);
 
-void synapi_free(struct synapi_t* handle);
+// semi private
+int synapi_queue(synapi_t* handle, synapi_action action, synapi_method method, int api_key_request, int user_data, va_list options);
 
-// "private"
+
+// private
+void synapi_send(synapi_t* handle, synapi_request_t* request);
+void synapi_free_curl_handle(synapi_t* handle, synapi_curl_handle_t* curl);
+void synapi_free_request(synapi_t* handle, synapi_request_t* request);
+synapi_curl_handle_t* synapi_get_curl_handle(synapi_t* handle);
+void synapi_build_url(synapi_t* handle, synapi_request_t* request);
+void synapi_add_parameter(int* buffer_size, int buffer_max, char* buffer, char* attr, char* value);
+void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_list options);
+
+
+// CALLBACKS
 size_t synapi_api_key_write(void* ptr, size_t size, size_t nmemb, void* stream);
-CURL* synapi_get_curl_handle();
-char* synapi_build_query_string(struct synapi_t* handle, ...);
+
 
 #endif
