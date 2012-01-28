@@ -16,28 +16,16 @@ macro(pkg_message PREFIX)
   endif ()
 endmacro(pkg_message)
 
-# Construct search paths for includes and libraries from a PREFIX_PATH
-macro(create_search_paths PREFIX)
-  foreach(dir ${${PREFIX}_PREFIX_PATH})
-    set(${PREFIX}_INC_SEARCH_PATH ${${PREFIX}_INC_SEARCH_PATH}
-      ${dir}/include ${dir}/include/${PREFIX})
-    set(${PREFIX}_LIB_SEARCH_PATH ${${PREFIX}_LIB_SEARCH_PATH}
-      ${dir}/lib ${dir}/lib/${PREFIX} ${dir}/Libs)
-  endforeach(dir)
-  set(${PREFIX}_FRAMEWORK_SEARCH_PATH ${${PREFIX}_PREFIX_PATH})
-endmacro(create_search_paths)
+macro(pkg_showsearch PREFIX)
+  pkg_message(PREFIX "include search: ${${PREFIX}_INCLUDE_SEARCH_DIRS}")
+  pkg_message(PREFIX "lib search: ${${PREFIX}_LIB_SEARCH_DIRS}")
+  pkg_message(PREFIX "libd search: ${${PREFIX}_LIB_SEARCH_DIRS}")
+endmacro(pkg_showsearch)
 
-# clear cache variables if a certain variable changed
-macro(clear_if_changed TESTVAR)
-  # test against internal check variable
-  if (NOT "${${TESTVAR}}" STREQUAL "${${TESTVAR}_INT_CHECK}")
-    message(STATUS "${TESTVAR} changed.")
-    foreach(var ${ARGN})
-      set(${var} "NOTFOUND" CACHE STRING "x" FORCE)
-    endforeach(var)
-  endif ()
-  set(${TESTVAR}_INT_CHECK ${${TESTVAR}} CACHE INTERNAL "x" FORCE)
-endmacro(clear_if_changed)
+macro(pkg_showresults PREFIX)
+  message(STATUS "${PREFIX} include: ${${PREFIX}_INCLUDE_DIR}")
+  message(STATUS "${PREFIX} library: ${${PREFIX}_LIBRARY}")
+endmacro(pkg_showresults)
 
 # Try to get some hints from pkg-config, if available
 macro(use_pkgconfig PREFIX PKGNAME)
@@ -60,7 +48,9 @@ macro(make_library_set PREFIX)
   endif ()
 
   STRING(COMPARE EQUAL ${CMAKE_BUILD_TYPE} "Debug" CMAKE_BUILD_TYPE_DBG)
-  if(CMAKE_BUILD_TYPE_DBG)
+  if(${PREFIX}_FWK)
+    set(${PREFIX}_CUR ${${PREFIX}_FWK})
+  elseif(CMAKE_BUILD_TYPE_DBG)
     set(${PREFIX}_CUR ${${PREFIX}_DBG})
   else()
     set(${PREFIX}_CUR ${${PREFIX}_REL})
@@ -130,3 +120,44 @@ MACRO(findpkg_framework fwk)
     ENDFOREACH(dir)
   ENDIF(APPLE)
 ENDMACRO(findpkg_framework)
+
+# Get environment variable, define it as ENV_$var and make sure backslashes are converted to forward slashes
+macro(getenv_path VAR)
+   set(ENV_${VAR} $ENV{${VAR}})
+   # replace won't work if var is blank
+   if (ENV_${VAR})
+     string( REGEX REPLACE "\\\\" "/" ENV_${VAR} ${ENV_${VAR}} )
+   endif ()
+endmacro(getenv_path)
+
+# Construct search paths for includes and libraries from a PREFIX_PATH
+macro(create_search_paths PREFIX)
+  foreach(dir ${${PREFIX}_PREFIX_PATH})
+    set(${PREFIX}_INC_SEARCH_PATH ${${PREFIX}_INC_SEARCH_PATH}
+      ${dir}/include ${dir}/Include ${dir}/include/${PREFIX} ${dir}/Headers)
+    set(${PREFIX}_LIB_SEARCH_PATH ${${PREFIX}_LIB_SEARCH_PATH}
+      ${dir}/lib ${dir}/Lib ${dir}/lib/${PREFIX} ${dir}/Libs)
+    set(${PREFIX}_BIN_SEARCH_PATH ${${PREFIX}_BIN_SEARCH_PATH}
+      ${dir}/bin)
+  endforeach(dir)
+  set(${PREFIX}_FRAMEWORK_SEARCH_PATH ${${PREFIX}_PREFIX_PATH})
+endmacro(create_search_paths)
+
+# clear cache variables if a certain variable changed
+macro(clear_if_changed TESTVAR)
+  # test against internal check variable
+  # HACK: Apparently, adding a variable to the cache cleans up the list
+  # a bit. We need to also remove any empty strings from the list, but
+  # at the same time ensure that we are actually dealing with a list.
+  list(APPEND ${TESTVAR} "")
+  list(REMOVE_ITEM ${TESTVAR} "")
+  if (NOT "${${TESTVAR}}" STREQUAL "${${TESTVAR}_INT_CHECK}")
+    message(STATUS "${TESTVAR} changed.")
+    foreach(var ${ARGN})
+      set(${var} "NOTFOUND" CACHE STRING "x" FORCE)
+    endforeach(var)
+  endif ()
+  set(${TESTVAR}_INT_CHECK ${${TESTVAR}} CACHE INTERNAL "x" FORCE)
+endmacro(clear_if_changed)
+
+

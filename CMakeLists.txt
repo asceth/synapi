@@ -1,25 +1,25 @@
 ######################################################################
-# GameSyn Build System
-# Welcome to the CMake build system for GameSyn.
+# SynAPI Build System
+# Welcome to the CMake build system for SynAPI
 ######################################################################
 
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
 set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS TRUE)
-cmake_policy(SET CMP0003 NEW)
+#cmake_policy(SET CMP0003 NEW)
 
-project(GameSyn)
+project(SYNAPI)
 
 # Include necessary submodules
 set(CMAKE_MODULE_PATH
-  "${GameSyn_SOURCE_DIR}/cmake"
-  "${GameSyn_SOURCE_DIR}/cmake/utils"
-  "${GameSyn_SOURCE_DIR}/cmake/packages"
+  "${SYNAPI_SOURCE_DIR}/cmake"
+  "${SYNAPI_SOURCE_DIR}/cmake/utils"
+  "${SYNAPI_SOURCE_DIR}/cmake/packages"
 )
 include(CMakeDependentOption)
 include(MacroLogFeature)
-include(GameSynConfigTargets)
+include(SynAPIConfigTargets)
 include(PreprocessorUtils)
-set(GameSyn_WORK_DIR ${GameSyn_BINARY_DIR})
+set(SYNAPI_WORK_DIR ${SYNAPI_BINARY_DIR})
 
 
 #####################################################################
@@ -29,69 +29,53 @@ set(GameSyn_WORK_DIR ${GameSyn_BINARY_DIR})
 if (CMAKE_BUILD_TYPE STREQUAL "")
   # CMake defaults to leaving CMAKE_BUILD_TYPE empty. This screws up
   # differentiation between debug and release builds.
-  set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Choose the type of build, options are: None (CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel." FORCE)
+  set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build, options are: None (CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel." FORCE)
 endif ()
 set(CONFIGURATION ${CMAKE_BUILD_TYPE})
 
 if (NOT APPLE)
-  # Create debug libraries with _d postfix
-  set(CMAKE_DEBUG_POSTFIX "_d")
-endif ()
-
-# Set compiler specific build flags
-if (CMAKE_COMPILER_IS_GNUCXX)
-  add_definitions(-msse)
-endif ()
-if (MSVC)
-  add_definitions(/fp:fast)
+  # Create debug libraries with no postfix
+  set(CMAKE_DEBUG_POSTFIX "")
 endif ()
 
 if (CMAKE_COMPILER_IS_GNUCXX)
   # Test for GCC visibility
   include(CheckCXXCompilerFlag)
-  check_cxx_compiler_flag(-fvisibility=hidden GameSyn_GCC_VISIBILITY)
-  if (GameSyn_GCC_VISIBILITY)
+  check_cxx_compiler_flag(-fvisibility=hidden SYNAPI_GCC_VISIBILITY)
+  if (SYNAPI_GCC_VISIBILITY)
     # determine gcc version
     execute_process(COMMAND ${CMAKE_CXX_COMPILER} -dumpversion
-      OUTPUT_VARIABLE GameSyn_GCC_VERSION)
-    message(STATUS "Detected g++ ${GameSyn_GCC_VERSION}")
+      OUTPUT_VARIABLE SYNAPI_GCC_VERSION)
+    message(STATUS "Detected g++ ${SYNAPI_GCC_VERSION}")
     message(STATUS "Enabling GCC visibility flags")
-    set(GameSyn_GCC_VISIBILITY_FLAGS "-DGameSyn_GCC_VISIBILITY -fvisibility=hidden")
+    set(SYNAPI_GCC_VISIBILITY_FLAGS "-DSYNAPI_GCC_VISIBILITY -fvisibility=hidden")
 
     # check if we can safely add -fvisibility-inlines-hidden
-    string(TOLOWER "${CMAKE_BUILD_TYPE}" GameSyn_BUILD_TYPE)
-    if (GameSyn_BUILD_TYPE STREQUAL "debug" AND GameSyn_GCC_VERSION VERSION_LESS "4.2")
+    string(TOLOWER "${CMAKE_BUILD_TYPE}" SYNAPI_BUILD_TYPE)
+    if (SYNAPI_BUILD_TYPE STREQUAL "debug" AND SYNAPI_GCC_VERSION VERSION_LESS "4.2")
       message(STATUS "Skipping -fvisibility-inlines-hidden due to possible bug in g++ < 4.2")
     else ()
-      set(GameSyn_GCC_VISIBILITY_FLAGS "${GameSyn_GCC_VISIBILITY_FLAGS} -fvisibility-inlines-hidden")
+      set(SYNAPI_GCC_VISIBILITY_FLAGS "${SYNAPI_GCC_VISIBILITY_FLAGS} -fvisibility-inlines-hidden")
     endif ()
-  endif (GameSyn_GCC_VISIBILITY)
+  endif (SYNAPI_GCC_VISIBILITY)
 endif (CMAKE_COMPILER_IS_GNUCXX)
 
 # determine system endianess
 include(TestBigEndian)
-test_big_endian(GameSyn_TEST_BIG_ENDIAN)
+test_big_endian(SYNAPI_TEST_BIG_ENDIAN)
 
-# Add GameSyn engine include path
-include_directories("${GameSyn_SOURCE_DIR}/deps/curl")
-include_directories("${GameSyn_SOURCE_DIR}/api")
+# 32 bit
+set(CMAKE_C_FLAGS "-m32")
+
+include_directories("${SYNAPI_SOURCE_DIR}/deps/curl")
+include_directories("${SYNAPI_SOURCE_DIR}/api")
 
 include(Dependencies)
-# definitions for samples
-set(GameSyn_LIBRARIES LibGameSyn)
 
 # Specify build paths
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${GameSyn_BINARY_DIR}/lib")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${GameSyn_BINARY_DIR}/lib")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${GameSyn_BINARY_DIR}/bin")
-if (WIN32 OR APPLE)
-  if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    # We don't want to install in default system location, install is really for the SDK, so call it that
-    SET(CMAKE_INSTALL_PREFIX
-	  "${GameSyn_BINARY_DIR}/sdk" CACHE PATH "GameSyn install prefix" FORCE
-    )
-  endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-endif(WIN32 OR APPLE)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${SYNAPI_BINARY_DIR}/lib")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${SYNAPI_BINARY_DIR}/lib")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${SYNAPI_BINARY_DIR}/bin")
 
 
 
@@ -100,10 +84,8 @@ endif(WIN32 OR APPLE)
 ######################################################################
 
 # Customise what to build
-option(GameSyn_STATIC "Static build" TRUE)
-option(GameSyn_FULL_RPATH "Build executables with the full required RPATH to run from their install location." FALSE)
-option(GameSyn_STANDALONE_BUILD "Generate build files that do not reference CMake (e.g. source distro)" FALSE)
-option(GameSyn_BUILD_SAMPLES "Build GameSyn Samples" TRUE)
+option(SYNAPI_STATIC "Static build" TRUE)
+option(SYNAPI_BUILD_SAMPLES "Build SYNAPI Samples" TRUE)
 
 
 ###################################################################
@@ -116,11 +98,12 @@ include(ConfigureBuild)
 # Now setup targets
 ##################################################################
 
-# Setup GameSyn api project
+# Setup SYNAPI api project
 add_subdirectory(api)
 
-# Setup samples
-add_subdirectory(samples)
+if(SYNAPI_BUILD_SAMPLES)
+  # Setup samples
+  add_subdirectory(samples)
+endif()
 
-# Install CMake modules
 

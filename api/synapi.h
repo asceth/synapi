@@ -8,7 +8,31 @@
 
 #define SYNAPIAPI_VERSION ((SYNAPIAPI_VERSION_MAJOR << 16) | (SYNAPIAPI_VERSION_MINOR << 8) | SYNAPIAPI_VERSION_PATCH)
 
+#include <stdarg.h>
 #include <curl/curl.h>
+
+// Detect platform
+#if defined( WINCE )
+#   if !defined( PLATFORM_WIN_CE )
+#       define PLATFORM_WIN_CE
+#   endif
+#elif defined( WIN32 ) || defined( _WINDOWS )
+#   if !defined( PLATFORM_WIN )
+#       define PLATFORM_WIN
+#   endif
+#elif defined( __APPLE__ ) || defined( __APPLE_CC__ )
+#   if !defined( PLATFORM_MAC )
+#      define PLATFORM_MAC
+#   endif
+#else
+#   if !defined( PLATFORM_LINUX )
+#       define PLATFORM_LINUX
+#   endif
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 // Pre-declare classes
 // Allows use of pointers in header files without including individual .h
@@ -70,6 +94,7 @@ typedef struct synapi_t
   int api_key_set;
   CURLM* multi_handle;
   char api_key[256]; // SYN:S:<id>:<hash>
+  char base_url[256];
   synapi_curl_handle_t** pool;
   synapi_request_t** requests;
 } synapi_t;
@@ -77,6 +102,7 @@ typedef struct synapi_t
 
 // public
 synapi_t* synapi_init(const char* api_key, int pool_size);
+void synapi_url(synapi_t* handle, char* url);
 void synapi_free(synapi_t* handle);
 
 int synapi_queued(synapi_t* handle);
@@ -86,7 +112,7 @@ void synapi_perform(synapi_t* handle);
 // ACTIONS
 void synapi_new_server(synapi_t* handle);
 void synapi_update_server(synapi_t* handle, ...);
-void synapi_player(synapi_t* handle, ...);
+void synapi_new_player(synapi_t* handle, ...);
 void synapi_update_player(synapi_t* handle, int internal_id, ...);
 void synapi_delete_player(synapi_t* handle, int internal_id);
 void synapi_heartbeat(synapi_t* handle);
@@ -109,5 +135,8 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
 // CALLBACKS
 size_t synapi_api_key_write(void* ptr, size_t size, size_t nmemb, void* stream);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

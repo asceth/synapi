@@ -1,6 +1,6 @@
 #include <string.h>
-#include <stdarg.h>
-#include "stdlib.h"
+#include <stdlib.h>
+
 #include "synapi.h"
 
 int i = 0;
@@ -32,7 +32,14 @@ synapi_t* synapi_init(const char* api_key, int pool_size)
       handle->api_key[0] = '\0';
     }
 
+  synapi_url(handle, "http://api.serversyn.com");
+
   return handle;
+}
+
+void synapi_url(synapi_t* handle, char* url)
+{
+  strncpy(handle->base_url, url, sizeof(handle->base_url) - 1);
 }
 
 void synapi_free(synapi_t* handle)
@@ -292,21 +299,22 @@ void synapi_build_url(synapi_t* handle, synapi_request_t* request)
   switch (request->action)
     {
     case SYN_SERVERS_NEW:
-      snprintf(request->url, sizeof(request->url), "http://localhost:3000/servers");
+      snprintf(request->url, sizeof(request->url), "%s/servers", handle->base_url);
       break;
     case SYN_SERVERS_UPDATE:
-      snprintf(request->url, sizeof(request->url), "http://localhost:3000/servers/%s", handle->api_key);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s", handle->base_url, handle->api_key);
       break;
     case SYN_PLAYERS_NEW:
-      snprintf(request->url, sizeof(request->url), "http://localhost:3000/servers/%s/server_players", handle->api_key);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players", handle->base_url, handle->api_key);
       break;
     case SYN_PLAYERS_UPDATE:
-      snprintf(request->url, sizeof(request->url), "http://localhost:3000/servers/%s/server_players/%d", handle->api_key, request->user_data);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players/%d", handle->base_url, handle->api_key, request->user_data);
       break;
     case SYN_PLAYERS_DELETE:
-      snprintf(request->url, sizeof(request->url), "http://localhost:3000/servers/%s/server_players/%d", handle->api_key, request->user_data);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players/%d", handle->base_url, handle->api_key, request->user_data);
       break;
     case SYN_HEARTBEAT:
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s", handle->base_url, handle->api_key);
       break;
     }
 }
@@ -449,7 +457,7 @@ void synapi_update_server(synapi_t* handle, ...)
   va_end(options);
 }
 
-void synapi_player(synapi_t* handle, ...)
+void synapi_new_player(synapi_t* handle, ...)
 {
   va_list options;
   va_start(options, handle);
