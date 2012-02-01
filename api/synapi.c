@@ -5,12 +5,26 @@
 
 int i = 0;
 int multi_perform_counter = 0;
+static global_init = 0;
+
+void synapi_global_init()
+{
+  curl_global_init(CURL_GLOBAL_ALL);
+}
+
+void synapi_global_free()
+{
+  curl_global_cleanup();
+}
 
 synapi_t* synapi_init(const char* api_key, int pool_size)
 {
   synapi_t* handle = malloc(sizeof(synapi_t));
   handle->multi_handle = curl_multi_init();
   handle->pool_size = pool_size;
+  handle->encoded_api_key = NULL;
+  handle->api_key_set = 0;
+  handle->api_key[0] = '\0';
 
   handle->pool = calloc(sizeof(synapi_curl_handle_t*), pool_size);
   handle->requests = calloc(sizeof(synapi_request_t*), pool_size);
@@ -20,26 +34,54 @@ synapi_t* synapi_init(const char* api_key, int pool_size)
       handle->requests[i] = NULL;
     }
 
-
   if (api_key != NULL)
     {
-      strncpy(handle->api_key, api_key, sizeof(handle->api_key) - 1);
-      handle->api_key[sizeof(handle->api_key)] = '\0';
-      handle->api_key_set = 1;
-    }
-  else
-    {
-      handle->api_key[0] = '\0';
+      synapi_api_key(handle, api_key, strlen(api_key));
     }
 
-  synapi_url(handle, "http://api.serversyn.com");
+  synapi_url(handle, "http://api.serversyn.com", "Host: api.serversyn.com");
 
   return handle;
 }
 
-void synapi_url(synapi_t* handle, char* url)
+void synapi_url(synapi_t* handle, const char* url, const char* host_header)
 {
   strncpy(handle->base_url, url, sizeof(handle->base_url) - 1);
+  handle->base_url[sizeof(handle->base_url) - 1] = '\0';
+
+  strncpy(handle->host_header, host_header, sizeof(handle->host_header) - 1);
+  handle->host_header[sizeof(handle->host_header) - 1] = '\0';
+}
+
+void synapi_api_key(synapi_t* handle, const char* new_api_key, int size)
+{
+  int usable_size = size;
+  if (size > sizeof(handle->api_key))
+    {
+      usable_size = sizeof(handle->api_key) - 1;
+    }
+  strncpy(handle->api_key, new_api_key, usable_size);
+  handle->api_key[usable_size] = '\0';
+
+  // set the null termination at the first \r and \n ( to be safe )
+  char* pr = strchr(handle->api_key, '\r');
+  if (pr != NULL)
+    {
+      handle->api_key[pr - handle->api_key + 1] = '\0';
+    }
+
+  char* pn = strchr(handle->api_key, '\n');
+  if (pn != NULL)
+    {
+      handle->api_key[pn - handle->api_key + 1] = '\0';
+    }
+
+  handle->api_key_set = 1;
+  if (handle->encoded_api_key != NULL)
+    {
+      free(handle->encoded_api_key);
+    }
+  handle->encoded_api_key = curl_escape(handle->api_key, strlen(handle->api_key));
 }
 
 void synapi_free(synapi_t* handle)
@@ -194,8 +236,13 @@ void synapi_send(synapi_t* handle, synapi_request_t* request)
 
   // send buffer off to payload
   curl = synapi_get_curl_handle(handle);
+  curl->headers = request->headers;
   curl_easy_setopt(curl->handle, CURLOPT_URL, request->url);
   curl_easy_setopt(curl->handle, CURLOPT_COPYPOSTFIELDS, request->query);
+  if (request->headers != NULL)
+    {
+      curl_easy_setopt(curl->handle, CURLOPT_HTTPHEADER, curl->headers);
+    }
 
   switch (request->method)
     {
@@ -204,6 +251,7 @@ void synapi_send(synapi_t* handle, synapi_request_t* request)
       break;
     case SYN_PUT:
       curl_easy_setopt(curl->handle, CURLOPT_POST, 1);
+      curl_easy_setopt(curl->handle, CURLOPT_CUSTOMREQUEST, "PUT");
       break;
     case SYN_DELETE:
       curl_easy_setopt(curl->handle, CURLOPT_POST, 1);
@@ -232,6 +280,8 @@ int synapi_queue(synapi_t* handle, synapi_action action, synapi_method method, i
   request->method = method;
   request->api_key_request = api_key_request;
   request->user_data = user_data;
+  request->headers = NULL;
+  request->headers = curl_slist_append(request->headers, handle->host_header);
   synapi_build_query_string(handle, request, options);
 
   // if new server/api key request go ahead and send
@@ -262,6 +312,7 @@ void synapi_free_curl_handle(synapi_t* handle, synapi_curl_handle_t* curl)
         }
     }
   curl_easy_cleanup(curl->handle);
+  curl_slist_free_all(curl->headers);
   free(curl);
 }
 
@@ -302,30 +353,40 @@ void synapi_build_url(synapi_t* handle, synapi_request_t* request)
       snprintf(request->url, sizeof(request->url), "%s/servers", handle->base_url);
       break;
     case SYN_SERVERS_UPDATE:
-      snprintf(request->url, sizeof(request->url), "%s/servers/%s", handle->base_url, handle->api_key);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s", handle->base_url, handle->encoded_api_key);
       break;
     case SYN_PLAYERS_NEW:
-      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players", handle->base_url, handle->api_key);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players", handle->base_url, handle->encoded_api_key);
       break;
     case SYN_PLAYERS_UPDATE:
-      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players/%d", handle->base_url, handle->api_key, request->user_data);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players/%d", handle->base_url, handle->encoded_api_key, request->user_data);
       break;
     case SYN_PLAYERS_DELETE:
-      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players/%d", handle->base_url, handle->api_key, request->user_data);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s/server_players/%d", handle->base_url, handle->encoded_api_key, request->user_data);
       break;
     case SYN_HEARTBEAT:
-      snprintf(request->url, sizeof(request->url), "%s/servers/%s", handle->base_url, handle->api_key);
+      snprintf(request->url, sizeof(request->url), "%s/servers/%s", handle->base_url, handle->encoded_api_key);
       break;
     }
 }
 
 void synapi_add_parameter(int* buffer_size, int buffer_max, char* buffer, char* attr, char* value)
 {
-  strncat(buffer, attr, buffer_max - *buffer_size);
-  *buffer_size += strlen(attr);
+  int size = strlen(attr);
+  if (size > (buffer_max - *buffer_size))
+    {
+      size = (buffer_max - *buffer_size);
+    }
+  strncat(buffer, attr, size);
+  *buffer_size += size;
 
-  strncat(buffer, value, buffer_max - *buffer_size);
-  *buffer_size += strlen(value);
+  size = strlen(value);
+  if (size > (buffer_max - *buffer_size))
+    {
+      size = (buffer_max - *buffer_size);
+    }
+  strncat(buffer, value, size);
+  *buffer_size += size;
 }
 
 void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_list options)
@@ -334,15 +395,19 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
   char* buffer = calloc(sizeof(char), buffer_max);
   int buffer_size = 1;
 
-  char* value = calloc(sizeof(char), 64);
+  char value[64];
   char* result = NULL;
   synapi_option option = 0;
 
   int va_list_end = 0;
 
+  char* arg = NULL;
+  char* encoded = NULL;
+
   if (options == NULL)
     {
       buffer[0] = '\0';
+      buffer_size = 0;
     }
   else
     {
@@ -357,7 +422,7 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
             }
           else
             {
-              if (buffer_size != 1)
+              if (buffer_size > 1)
                 {
                   buffer_size += 1;
                   strncat(buffer, "&", sizeof(buffer) - buffer_size);
@@ -370,22 +435,34 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
                   synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][slots]=", value);
                   break;
                 case SYNAPI_SERVER_GAME:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][game_identifier]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][game_identifier]=", encoded);
                   break;
                 case SYNAPI_SERVER_IP:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][ip]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][ip]=", encoded);
                   break;
                 case SYNAPI_SERVER_PORT:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][port]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][port]=", encoded);
                   break;
                 case SYNAPI_SERVER_NAME:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][name]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][name]=", encoded);
                   break;
                 case SYNAPI_SERVER_LEVEL:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][level_name]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server[server_profile_attributes][level_name]=", encoded);
                   break;
                 case SYNAPI_PLAYER_NAME:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[name]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[name]=", encoded);
                   break;
                 case SYNAPI_PLAYER_SCORE:
                   snprintf(value, sizeof(value) - 1, "%d", va_arg(options, int));
@@ -396,15 +473,27 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
                   synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[internal_id]=", value);
                   break;
                 case SYNAPI_PLAYER_NETWORK_ID:
-                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[network_identifier]=", va_arg(options, char*));
+                  arg = va_arg(options, char*);
+                  encoded = curl_escape(arg, strlen(arg));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[network_identifier]=", encoded);
                   break;
+                }
+
+              if (encoded != NULL)
+                {
+                  free(encoded);
+                  encoded = NULL;
                 }
             }
         }
     }
 
-  buffer_size += 1;
-  strncat(buffer, "&", sizeof(buffer) - buffer_size);
+  if (buffer_size > 1)
+    {
+      buffer_size += 1;
+      strncat(buffer, "&", 1);
+    }
+
   switch (request->method)
     {
     case SYN_POST:
@@ -418,13 +507,12 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
       break;
     }
 
-  result = calloc(sizeof(char), buffer_size);
-  strncpy(result, buffer, buffer_size - 1);
+  result = calloc(sizeof(char), buffer_size+1);
+  strncpy(result, buffer, buffer_size);
   result[buffer_size] = '\0';
 
   request->query = result;
 
-  free(value);
   free(buffer);
 }
 
@@ -433,9 +521,7 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
 size_t synapi_api_key_write(void* ptr, size_t size, size_t nmemb, void* stream)
 {
   synapi_t* handle = (synapi_t*) stream;
-
-  snprintf(handle->api_key, sizeof(handle->api_key), "%s", (char*) ptr);
-  handle->api_key_set = 1;
+  synapi_api_key(handle, (char*) ptr, size * nmemb);
 
   return size * nmemb;
 }
@@ -486,4 +572,5 @@ void synapi_heartbeat(synapi_t* handle)
 {
   synapi_queue(handle, SYN_HEARTBEAT, SYN_PUT, 0, 0, NULL);
 }
+
 

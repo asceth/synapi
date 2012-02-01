@@ -71,15 +71,18 @@ typedef enum synapi_action
     SYN_HEARTBEAT
   } synapi_action;
 
-typedef struct synapi_curl_handle_t {
+typedef struct synapi_curl_handle_t
+{
   int free;
   CURL* handle;
+  struct curl_slist* headers;
 } synapi_curl_handle_t;
 
 typedef struct synapi_request_t
 {
   char* query;
   char url[255];
+  struct curl_slist* headers;
   synapi_method method;
   synapi_action action;
   int api_key_request;
@@ -94,15 +97,20 @@ typedef struct synapi_t
   int api_key_set;
   CURLM* multi_handle;
   char api_key[256]; // SYN:S:<id>:<hash>
+  char* encoded_api_key; // SYN:S:<id>:<hash>
   char base_url[256];
+  char host_header[256];
   synapi_curl_handle_t** pool;
   synapi_request_t** requests;
 } synapi_t;
 
 
 // public
+void synapi_global_init();
+void synapi_global_free();
 synapi_t* synapi_init(const char* api_key, int pool_size);
-void synapi_url(synapi_t* handle, char* url);
+void synapi_url(synapi_t* handle, const char* url, const char* host_header);
+void synapi_api_key(synapi_t* handle, const char* new_api_key, int size);
 void synapi_free(synapi_t* handle);
 
 int synapi_queued(synapi_t* handle);
@@ -130,7 +138,6 @@ synapi_curl_handle_t* synapi_get_curl_handle(synapi_t* handle);
 void synapi_build_url(synapi_t* handle, synapi_request_t* request);
 void synapi_add_parameter(int* buffer_size, int buffer_max, char* buffer, char* attr, char* value);
 void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_list options);
-
 
 // CALLBACKS
 size_t synapi_api_key_write(void* ptr, size_t size, size_t nmemb, void* stream);
