@@ -40,6 +40,7 @@ public OnPluginStart()
 
 public OnPluginEnd()
 {
+  store_api_key();
   synapi_free();
 }
 
@@ -66,7 +67,6 @@ public Action:OnPluginStart_Delayed(Handle:timer)
 // API Usage
 public Action:UpdateServer(Handle:timer)
 {
-  new Handle:slots_handle = FindConVar("maxplayers");
   new Handle:hostname_handle = FindConVar("hostname");
   new Handle:ip_handle = FindConVar("ip");
   new Handle:port_handle = FindConVar("hostport");
@@ -76,7 +76,6 @@ public Action:UpdateServer(Handle:timer)
   decl String:name[64];
   decl String:ip[64];
   decl String:port[10];
-  new slots = GetConVarInt(slots_handle);
 
   GetGameFolderName(game_identifier, sizeof(game_identifier));
   GetConVarString(hostname_handle, name, sizeof(name));
@@ -85,9 +84,8 @@ public Action:UpdateServer(Handle:timer)
 
   LogMessage("[SynAPI] Updating server information...");
 
-  synapi_update_server(slots, game_identifier, ip, port, name);
+  synapi_update_server(MaxClients, game_identifier, ip, port, name);
 
-  CloseHandle(slots_handle);
   CloseHandle(hostname_handle);
   CloseHandle(ip_handle);
   CloseHandle(port_handle);
@@ -107,6 +105,7 @@ public Action:Event_NewMap(Handle:event, const String:name[], bool:dontBroadcast
   decl String:level[64];
   GetEventString(event, "mapname", level, sizeof(level));
 
+  LogMessage("[SynAPI] updating map...");
   synapi_update_server_level(level);
 }
 
@@ -119,6 +118,7 @@ public Action:Event_ServerCvar(Handle:event, const String:name[], bool:dontBroad
 
   if (StrEqual(cvar, "hostname"))
     {
+      LogMessage("[SynAPI] updating server name...");
       synapi_update_server_name(value);
     }
 }
@@ -136,6 +136,7 @@ public Action:Event_PlayerActivate(Handle:event, const String:name[], bool:dontB
   GetClientAuthString(client_id, network_id, sizeof(network_id));
   GetClientIP(client_id, ip, sizeof(ip));
 
+  LogMessage("[SynAPI] new player...");
   synapi_new_player(internal_id, 0, network_id, pname);
 }
 
@@ -143,6 +144,7 @@ public Action:Event_PlayerDisconnect(Handle:event, const String:name[], bool:don
 {
   new internal_id = GetEventInt(event, "userid");
 
+  LogMessage("[SynAPI] deleting player...");
   synapi_delete_player(internal_id);
 }
 
@@ -151,6 +153,7 @@ public Action:Event_PlayerScore(Handle:event, const String:name[], bool:dontBroa
   new internal_id = GetEventInt(event, "userid");
   new score = GetEventInt(event, "score");
 
+  LogMessage("[SynAPI] updating player score...");
   synapi_update_player_score(internal_id, score);
 }
 
@@ -160,6 +163,7 @@ public Action:Event_PlayerChangeName(Handle:event, const String:name[], bool:don
   new internal_id = GetEventInt(event, "userid");
   GetEventString(event, "newname", pname, sizeof(pname));
 
+  LogMessage("[SynAPI] updating player name...");
   synapi_update_player_name(internal_id, pname);
 }
 
@@ -167,11 +171,13 @@ public Action:Event_PlayerChangeName(Handle:event, const String:name[], bool:don
 // Helpers
 public store_api_key()
 {
-  new String:api_key[256];
+  decl String:api_key[256];
+  synapi_get_api_key(api_key, 255);
+
   new Handle:kv = CreateKeyValues("SynAPI");
 
   FileToKeyValues(kv, CONFIG_FILE);
-  KvSetString(kv, "api_key", synapi_get_api_key(api_key, 255));
+  KvSetString(kv, "api_key", api_key);
   KeyValuesToFile(kv, CONFIG_FILE);
 
 	CloseHandle(kv);

@@ -17,7 +17,7 @@ native synapi_init_with_api_key(const String:api_key[], pool_size);
 /**
    Gets the api key stored, call on plugin unload
 */
-native synapi_get_api_key(String:api_key[]);
+native synapi_get_api_key(String:api_key[], length);
 
 /**
    Call this on plugin end, frees up resources being used

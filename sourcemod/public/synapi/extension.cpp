@@ -71,12 +71,21 @@ cell_t sm_synapi_init_with_api_key(IPluginContext *pContext, const cell_t *param
 // native synapi_get_api_key(String:api_key[], length);
 cell_t sm_synapi_get_api_key(IPluginContext *pContext, const cell_t *params)
 {
-  char buffer[sizeof(g_synapi.handle->api_key)];
+  unsigned int size = params[2];
+  if (size > sizeof(g_synapi.handle->api_key))
+    {
+      size = sizeof(g_synapi.handle->api_key);
+    }
 
-	snprintf(buffer, sizeof(buffer), "%s", g_synapi.handle->api_key);
-	pContext->StringToLocal(params[1], params[2], buffer);
+  char buffer[size];
 
-	return 1;
+  if (g_synapi.handle != NULL)
+    {
+      snprintf(buffer, size - 1, "%s", g_synapi.handle->api_key);
+      pContext->StringToLocal(params[1], size - 1, buffer);
+    }
+
+  return 1;
 }
 
 // native synapi_free();
