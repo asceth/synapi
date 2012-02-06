@@ -55,6 +55,7 @@ void SynAPI::SDK_OnUnload()
 cell_t sm_synapi_init(IPluginContext *pContext, const cell_t *params)
 {
   g_synapi.handle = synapi_init(NULL, params[1]);
+  synapi_url(g_synapi.handle, "http://127.0.0.1", "Host: api.serversyn.local");
   return true;
 }
 
@@ -64,6 +65,7 @@ cell_t sm_synapi_init_with_api_key(IPluginContext *pContext, const cell_t *param
   char* api_key;
   pContext->LocalToString(params[1], &api_key);
   g_synapi.handle = synapi_init(api_key, params[2]);
+  synapi_url(g_synapi.handle, "http://127.0.0.1", "Host: api.serversyn.local");
 
   return true;
 }
@@ -163,7 +165,7 @@ cell_t sm_synapi_update_server_level(IPluginContext *pContext, const cell_t *par
 {
   char* level_name;
   pContext->LocalToString(params[1], &level_name);
-  synapi_update_server(g_synapi.handle, SYNAPI_SERVER_NAME, level_name, SYNAPI_END);
+  synapi_update_server(g_synapi.handle, SYNAPI_SERVER_LEVEL, level_name, SYNAPI_END);
   return true;
 }
 
