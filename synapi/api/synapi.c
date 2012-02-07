@@ -468,6 +468,10 @@ void synapi_build_query_string(synapi_t* handle, synapi_request_t* request, va_l
                   snprintf(value, sizeof(value) - 1, "%d", va_arg(options, int));
                   synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[score]=", value);
                   break;
+                case SYNAPI_PLAYER_SCORE_MODIFIER:
+                  snprintf(value, sizeof(value) - 1, "%d", va_arg(options, int));
+                  synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[score_modifier]=", value);
+                  break;
                 case SYNAPI_PLAYER_INTERNAL_ID:
                   snprintf(value, sizeof(value) - 1, "%d", va_arg(options, int));
                   synapi_add_parameter(&buffer_size, buffer_max, buffer, "server_player[internal_id]=", value);
