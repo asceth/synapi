@@ -17,7 +17,7 @@ public Plugin:myinfo =
     url = "http://www.serversyn.com"
   };
 
-new Handle:cvar_enable;
+//new Handle:cvar_enable;
 
 public OnPluginStart()
 {
